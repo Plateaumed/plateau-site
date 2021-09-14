@@ -659,12 +659,16 @@ p {
 		display: none;
 	}
 
+	.nav-contact-us span {
+		font-size: 1.6rem;
+	}
+
 	.plateaumed-header {
 		margin-top: 3rem;
 		margin-bottom: 2.5rem;
 		background: #fff;
 		height: 120vh;
-		padding: 9rem 0 5rem 0;
+		padding: 10rem 0 5rem 0;
 	}
 
 	.plateaumed-header h1 {
@@ -826,6 +830,15 @@ p {
 @media (min-width: 1001px) and (max-width: 1200px) {
 	.nav-contact-us {
 		width: 50%;
+	}
+
+	.plateaumed-header {
+		padding: 10rem 0 0 0;
+	}
+
+	.plateaumed-header h1 {
+		font-size: 4rem;
+		line-height: 5.6rem;
 	}
 
 	.clinical-features h3,
