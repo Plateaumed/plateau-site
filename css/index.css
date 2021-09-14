@@ -1,0 +1,847 @@
+@font-face {
+	font-family: 'Gilroy';
+	src: url('../fonts/Gilroy-Light.woff') format('woff');
+}
+
+@font-face {
+	font-family: 'GilroyBlack';
+	src: url('../fonts/Gilroy-Black.woff') format('woff');
+}
+
+@font-face {
+	font-family: 'GilroyBold';
+	src: url('../fonts/Gilroy-Bold.woff') format('woff');
+}
+
+@font-face {
+	font-family: 'GilroyHeavy';
+	src: url('../fonts/Gilroy-Heavy.woff') format('woff');
+}
+
+@font-face {
+	font-family: 'GilroyMedium';
+	src: url('../fonts/Gilroy-Medium.woff') format('woff');
+}
+
+@font-face {
+	font-family: 'GilroyRegular';
+	src: url('../fonts/Gilroy-Regular.woff') format('woff');
+}
+
+body,
+html {
+	font-size: 62.5%;
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	background-color: #fff;
+	font-family: 'GilroyRegular', sans-serif;
+}
+
+::-webkit-scrollbar {
+	display: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+	margin: 0;
+}
+
+.plateaumed-container {
+	padding: 0 8rem 3rem 8rem;
+}
+
+.nav-container {
+	position: fixed;
+	height: 6rem;
+	padding: 2rem 8rem;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: calc(100% - 16rem);
+	z-index: 100;
+}
+
+.plateaumed-logo {
+	height: 5rem;
+}
+
+.nav-contact-us {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 40%;
+}
+
+.nav-contact-us span {
+	color: #121483;
+	font-size: 2rem;
+	font-family: 'GilroyMedium', sans-serif;
+	font-weight: bold;
+	display: flex;
+	justify-content: center;
+}
+
+.nav-contact-us .plateaumed-phone,
+.nav-contact-us .plateaumed-email {
+	height: 2.2rem;
+	width: 2.2rem;
+	margin-right: 1rem;
+	display: inline-block;
+}
+
+.plateaumed-email {
+	background-image: url('../img/email-icon.png');
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+.plateaumed-phone {
+	background-image: url('../img/telephone-icon.png');
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+
+.plateaumed-header {
+	position: relative;
+	width: 100%;
+	height: 75vh;
+	display: flex;
+	flex-direction: column;
+	padding: 15rem 0 8rem 0;
+	align-items: flex-start;
+	justify-content: space-between;
+	margin-bottom: 5rem;
+	background-image: url('../img/header-background.png');
+	object-fit: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.squares-bg {
+	position: absolute;
+	top: -10%;
+	left: 0;
+	background-image: url('../img/sqaures.png');
+	height: 50rem;
+	width: 40rem;
+}
+
+.plateaumed-header h1 {
+	font-size: 5.6rem;
+	letter-spacing: 0.2rem;
+	color: #fa8f12;
+	line-height: 7.2rem;
+	font-family: 'GilroyBlack', sans-serif;
+}
+
+.plateaumed-header h1 span {
+	color: #2e4fb4;
+}
+
+.plateaumed-header-bullets {
+	list-style: none;
+	margin: 0;
+	padding-inline-start: 0;
+}
+
+.plateaumed-header-bullets li {
+	font-size: 3.2rem;
+	font-weight: bold;
+	line-height: 4.1rem;
+	font-family: 'GilroyMedium', sans-serif;
+	font-weight: bold;
+	background-image: linear-gradient(90deg, #4052f6, #515bae);
+	background-clip: text;
+	-webkit-background-clip: text;
+	-moz-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	-moz-text-fill-color: transparent;
+	display: flex;
+	align-items: flex-start;
+	justify-content: flex-start;
+	margin-bottom: 3rem;
+}
+
+.plateaumed-header-bullets .arrow-down {
+	height: 3.5rem;
+	width: 3.5rem;
+	background-image: url('../img/ArrowDownCircle.svg');
+	background-size: contain;
+	background-repeat: no-repeat;
+	margin-right: 2rem;
+	display: inline-block;
+}
+
+.plateaumed-header-background {
+	margin-top: 3rem;
+	background-image: url('../img/header-image.svg');
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+	display: none;
+	width: 100%;
+	height: 30rem;
+}
+
+.header-contact-us {
+	display: flex;
+	align-items: flex-end;
+	justify-content: space-between;
+	width: 100%;
+	margin-top: 2rem;
+}
+
+.header-contact-us .header-contact-us-entry {
+	width: 60%;
+}
+
+.header-contact-us .header-contact-us-entry p {
+	font-size: 2.4rem;
+	font-family: 'GilroyRegular', sans-serif;
+	color: #121483;
+	font-weight: 600;
+	line-height: 4.5rem;
+}
+
+.header-contact-us .header-contact-us-entry input[type='text'] {
+	width: 60%;
+	padding: 2rem 3rem;
+	border-radius: 2rem;
+	font-size: 1.8rem;
+	font-family: 'GilroyLight', sans-serif;
+	margin: 0;
+	outline: 0;
+	border: 0;
+	box-shadow: -0.1rem 0.4rem 0.5rem rgba(0, 0, 0, 0.1);
+}
+
+.header-contact-us .header-contact-us-entry input[type='text']:focus {
+	border: 0.2rem solid #191bb4;
+}
+
+::placeholder {
+	font-size: 2rem;
+	color: #a6afc2;
+	font-family: 'GilroyRegular', sans-serif;
+}
+
+.header-contact-us-entry #plateaumed-notify {
+	color: #02c22c !important;
+	font-size: 2rem !important;
+	margin-left: 2rem;
+	display: none;
+}
+
+.header-contact-us .header-contact-us-entry button {
+	height: 6.4rem;
+	background: #191bb4;
+	padding: 1.5rem 5rem;
+	border: 0;
+	border-top-right-radius: 2rem;
+	border-bottom-left-radius: 2rem;
+	border-bottom-right-radius: 2rem;
+	margin-left: -2.8rem;
+	font-size: 2rem;
+	font-family: 'GilroyBold', sans-serif;
+	color: #fff;
+	cursor: pointer;
+}
+
+.scroll-down-btn {
+	height: 5rem;
+	width: 5rem;
+	border-radius: 50%;
+	color: #fff;
+	border: 0;
+	background: #191bb4;
+}
+
+.scroll-down-btn .chevron-double-down {
+	height: 3.5rem;
+	width: 3.5rem;
+	display: inline-block;
+	background-image: url('../img/chevron-double-down.png');
+	background-repeat: no-repeat;
+	background-position: center;
+	cursor: pointer;
+}
+
+.core-features {
+	margin-bottom: 10rem;
+	position: relative;
+}
+
+.anon-bg {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 75%;
+	height: 60%;
+	background-image: url('../img/core-features-bg2.png');
+	background-repeat: no-repeat;
+	object-fit: fill;
+}
+
+.core-features-header-text,
+.contact-us-header-text {
+	position: relative;
+	font-size: 3.6rem;
+	font-family: 'GilroyMedium', sans-serif;
+	letter-spacing: 0.2rem;
+	font-weight: bold;
+	color: #121483;
+	margin-left: 20rem;
+	margin-bottom: 8rem;
+}
+
+.core-features-header-text img,
+.contact-us-header-text img {
+	height: 3rem;
+	position: absolute;
+	bottom: -15%;
+	left: -6%;
+}
+
+.clinical-features,
+.administrative-features,
+.financial-analytics {
+	margin-bottom: 10rem;
+}
+
+.clinical-features h3,
+.administrative-features h3,
+.financial-analytics h3 {
+	color: #2b2ee9;
+	font-size: 3.4rem;
+	letter-spacing: 0.2rem;
+	font-family: 'GilroyMedium', sans-serif;
+	font-weight: bold;
+	margin-bottom: 2rem;
+}
+
+.features-wrapper {
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+	box-shadow: -0.1rem 0.3rem 0.5rem rgba(0, 0, 0, 0.1);
+	border-radius: 3rem;
+	padding: 4rem 2rem;
+}
+
+.plateaumed-features {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: flex-start;
+	padding: 1.5rem 0 1.5rem 2rem;
+	border-left: 0.1rem solid #2b2ee9;
+	height: 10rem;
+}
+
+.administrative-features .plateaumed-features {
+	width: 25%;
+}
+
+.financial-analytics .plateaumed-features {
+	width: 35%;
+}
+
+.plateaumed-features h4 {
+	font-size: 2rem;
+	line-height: 2.5rem;
+	font-family: 'GilroyMedium', sans-serif;
+	font-weight: 600;
+	margin-bottom: 1.5rem;
+}
+
+.plateaumed-features p {
+	font-size: 2rem;
+	color: #3a3b4a;
+	font-family: 'GilroyMedium', sans-serif;
+	font-weight: 500;
+}
+
+.footer-contact-container {
+	display: flex;
+	align-items: flex-start;
+	justify-content: space-between;
+	width: 90%;
+}
+
+.plateaumed-footer-contact {
+	border-left: 0.1rem solid #ffad4d;
+	padding: 2rem 0 2rem 2rem;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: space-between;
+}
+
+.plateaumed-footer div .reach-out {
+	color: #3a3b4a;
+	font-size: 2.8rem;
+	font-family: 'GilroyMedium', sans-serif;
+}
+
+.plateaumed-footer-contact span {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	color: #3a3b4a;
+	font-size: 2rem;
+	font-family: 'GilroyMedium', sans-serif;
+	margin-top: 1.5rem;
+}
+
+.plateaumed-phone-small {
+	height: 2.2rem;
+	width: 2.2rem;
+	margin-right: 1rem;
+	display: inline-block;
+}
+
+.badge-container {
+	display: flex;
+	width: 90%;
+	flex-direction: column;
+	align-items: flex-end;
+	justify-content: space-between;
+}
+
+.badge-wrapper {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+}
+
+.badge-container p {
+	color: #191bb4;
+	font-size: 2.8rem;
+	font-family: 'GilroyBold', sans-serif;
+	font-weight: 500;
+	margin-bottom: 1.5rem;
+}
+
+.badge-container img {
+	height: 5.4rem;
+	margin-right: 2rem;
+}
+
+@media screen and (max-width: 768px) {
+	.plateaumed-container {
+		padding: 0 3rem 2rem 3rem;
+	}
+
+	.nav-container {
+		height: 3rem;
+		width: calc(100% - 6rem);
+	}
+
+	.plateaumed-logo {
+		height: 3rem;
+	}
+
+	.nav-contact-us {
+		display: none;
+	}
+
+	.plateaumed-header {
+		margin-top: 2rem;
+		margin-bottom: 2rem;
+		background: #fff;
+		height: 120vh;
+		padding: 8rem 0 5rem 0;
+	}
+
+	.plateaumed-header h1 {
+		font-size: 2.5rem;
+		line-height: 5rem;
+	}
+
+	.plateaumed-header-bullets li {
+		font-size: 1.6rem;
+		line-height: 2.5rem;
+	}
+
+	.plateaumed-header-bullets .arrow-down {
+		height: 2rem;
+		width: 2rem;
+	}
+
+	.plateaumed-header-background {
+		margin-top: 0;
+		display: block;
+	}
+
+	.header-contact-us {
+		margin-top: 1.5rem;
+	}
+
+	.header-contact-us .header-contact-us-entry {
+		width: 90%;
+	}
+
+	.header-contact-us .header-contact-us-entry p {
+		font-size: 1.6rem;
+	}
+
+	.header-contact-us .header-contact-us-entry input[type='text'] {
+		width: 60%;
+		padding: 1rem;
+		border-radius: 1rem;
+		font-size: 1.4rem;
+	}
+
+	::placeholder {
+		font-size: 1.2rem;
+	}
+
+	.header-contact-us .header-contact-us-entry button {
+		height: 4rem;
+		background: #191bb4;
+		padding: 1rem 3rem;
+		border: 0;
+		border-top-right-radius: 1rem;
+		border-bottom-left-radius: 1rem;
+		border-bottom-right-radius: 1rem;
+		margin-left: -1.6rem;
+		font-size: 1.6rem;
+	}
+
+	.scroll-down-btn {
+		display: none;
+	}
+
+	.core-features {
+		margin-bottom: 2.5rem;
+	}
+
+	.core-features-header-text,
+	.contact-us-header-text {
+		font-size: 1.8rem;
+		margin-bottom: 2.5rem;
+		margin-left: 2rem;
+		letter-spacing: 0;
+	}
+
+	.core-features-header-text img,
+	.contact-us-header-text img {
+		height: 1.5rem;
+		left: -10%;
+	}
+
+	.clinical-features,
+	.administrative-features,
+	.financial-analytics {
+		margin-bottom: 2.5rem;
+	}
+
+	.clinical-features h3,
+	.administrative-features h3,
+	.financial-analytics h3 {
+		font-size: 1.8rem;
+	}
+
+	.features-wrapper {
+		flex-direction: column;
+		align-items: flex-start;
+		box-shadow: none;
+		padding: 1rem 0;
+	}
+
+	.plateaumed-features {
+		margin-bottom: 2rem;
+	}
+
+	.administrative-features .plateaumed-features,
+	.financial-analytics .plateaumed-features {
+		width: 100%;
+	}
+
+	.plateaumed-features h4 {
+		font-size: 1.2rem;
+	}
+
+	.plateaumed-features p {
+		font-size: 1.2rem;
+	}
+
+	.plateaumed-footer div {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		justify-content: space-between;
+	}
+
+	.plateaumed-footer div .reach-out {
+		font-size: 1.4rem;
+		margin-bottom: 4rem;
+	}
+
+	.plateaumed-footer-contact {
+		margin-bottom: 4rem;
+	}
+
+	.plateaumed-footer-contact span {
+		font-size: 1.4rem;
+	}
+
+	.plateaumed-phone-small {
+		height: 1.4rem;
+		width: 1.4rem;
+	}
+
+	.badge-container {
+		float: none;
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		justify-content: space-between;
+	}
+
+	.badge-container p {
+		font-size: 1.4rem;
+	}
+
+	.badge-wrapper div {
+		display: flex;
+		flex-direction: row;
+	}
+
+	.badge-container img {
+		height: 3rem;
+		margin-right: 1rem;
+	}
+}
+
+@media (min-width: 769px) and (max-width: 1000px) {
+	.plateaumed-container {
+		padding: 0 3rem 2rem 3rem;
+	}
+
+	.nav-container {
+		height: 3.5rem;
+		width: calc(100% - 6rem);
+	}
+
+	.plateaumed-logo {
+		height: 3.5rem;
+	}
+
+	.nav-contact-us {
+		display: none;
+	}
+
+	.plateaumed-header {
+		margin-top: 3rem;
+		margin-bottom: 2.5rem;
+		background: #fff;
+		height: 120vh;
+		padding: 9rem 0 5rem 0;
+	}
+
+	.plateaumed-header h1 {
+		font-size: 3rem;
+		line-height: 5rem;
+	}
+
+	.plateaumed-header-bullets li {
+		font-size: 1.8rem;
+		line-height: 3rem;
+	}
+
+	.plateaumed-header-bullets .arrow-down {
+		height: 3.5rem;
+		width: 3.5rem;
+	}
+	/* 
+	.header-contact-us {
+		margin-top: 2.5rem;
+	}
+
+	.header-contact-us .header-contact-us-entry {
+		width: 90%;
+	} */
+
+	.header-contact-us .header-contact-us-entry p {
+		font-size: 2rem;
+	}
+
+	.header-contact-us .header-contact-us-entry input[type='text'] {
+		width: 60%;
+		padding: 1rem;
+		border-radius: 1rem;
+		font-size: 1.4rem;
+	}
+
+	::placeholder {
+		font-size: 1.2rem;
+	}
+
+	.header-contact-us .header-contact-us-entry button {
+		height: 4rem;
+		background: #191bb4;
+		padding: 1rem 3rem;
+		border: 0;
+		border-top-right-radius: 1rem;
+		border-bottom-left-radius: 1rem;
+		border-bottom-right-radius: 1rem;
+		margin-left: -1.6rem;
+		font-size: 1.6rem;
+	}
+
+	.scroll-down-btn {
+		display: none;
+	}
+
+	.core-features {
+		margin-bottom: 2.5rem;
+	}
+
+	.core-features-header-text,
+	.contact-us-header-text {
+		font-size: 1.8rem;
+		margin-bottom: 2.5rem;
+		margin-left: 2rem;
+		letter-spacing: 0;
+	}
+
+	.core-features-header-text img,
+	.contact-us-header-text img {
+		height: 1.5rem;
+		left: -10%;
+	}
+
+	.clinical-features,
+	.administrative-features,
+	.financial-analytics {
+		margin-bottom: 2.5rem;
+	}
+
+	.clinical-features h3,
+	.administrative-features h3,
+	.financial-analytics h3 {
+		font-size: 1.8rem;
+	}
+
+	.features-wrapper {
+		flex-direction: column;
+		align-items: flex-start;
+		box-shadow: none;
+		padding: 1rem 0;
+	}
+
+	.plateaumed-features {
+		margin-bottom: 2rem;
+	}
+
+	.administrative-features .plateaumed-features,
+	.financial-analytics .plateaumed-features {
+		width: 100%;
+	}
+
+	.plateaumed-features h4 {
+		font-size: 1.2rem;
+	}
+
+	.plateaumed-features p {
+		font-size: 1.2rem;
+	}
+
+	.plateaumed-footer div {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		justify-content: space-between;
+	}
+
+	.plateaumed-footer div .reach-out {
+		font-size: 1.4rem;
+		margin-bottom: 4rem;
+	}
+
+	.plateaumed-footer-contact {
+		margin-bottom: 4rem;
+	}
+
+	.plateaumed-footer-contact span {
+		font-size: 1.4rem;
+	}
+
+	.plateaumed-phone-small {
+		height: 1.4rem;
+		width: 1.4rem;
+	}
+
+	.badge-container {
+		float: none;
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		justify-content: space-between;
+	}
+
+	.badge-container p {
+		font-size: 1.4rem;
+	}
+
+	.badge-wrapper div {
+		display: flex;
+		flex-direction: row;
+	}
+
+	.badge-container img {
+		height: 3rem;
+		margin-right: 1rem;
+	}
+}
+
+@media (min-width: 1001px) and (max-width: 1200px) {
+	.nav-contact-us {
+		width: 50%;
+	}
+
+	.clinical-features h3,
+	.administrative-features h3,
+	.financial-analytics h3 {
+		font-size: 3rem;
+	}
+
+	.plateaumed-features h4 {
+		font-size: 1.6rem;
+		line-height: 2rem;
+	}
+
+	.plateaumed-features p {
+		font-size: 1.4rem;
+	}
+
+	.plateaumed-footer-contact {
+		border-left: 0.1rem solid #ffad4d;
+		padding: 2rem 0 2rem 2rem;
+	}
+
+	.plateaumed-footer div .reach-out {
+		font-size: 2.2rem;
+	}
+
+	.plateaumed-footer-contact span {
+		font-size: 1.8rem;
+	}
+
+	.plateaumed-phone-small {
+		height: 2rem;
+		width: 2rem;
+	}
+
+	.badge-container p {
+		font-size: 2.4rem;
+	}
+
+	.badge-container img {
+		height: 5rem;
+	}
+}
