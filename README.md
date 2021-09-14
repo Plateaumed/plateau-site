@@ -1,2 +1,2 @@
 # plateau-site
-**The source for the PlateauMed site.
+**The source for the PlateauMed site.**
