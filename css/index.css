@@ -489,7 +489,7 @@ p {
 		margin-top: 2rem;
 		margin-bottom: 4rem;
 		background: #fff;
-		height: 90vh;
+		height: fit-content;
 		padding: 8rem 0 0rem 0;
 	}
 
@@ -504,8 +504,8 @@ p {
 	}
 
 	.plateaumed-header-bullets li {
-		font-size: 1.6rem;
-		line-height: 2.5rem;
+		font-size: 1.4rem;
+		line-height: 1.8rem;
 	}
 
 	.plateaumed-header-bullets .arrow-down {
@@ -543,14 +543,10 @@ p {
 	}
 
 	.header-contact-us .header-contact-us-entry button {
-		height: 4.2rem;
-		background: #191bb4;
 		padding: 1rem 3rem;
-		border: 0;
 		border-top-right-radius: 1.5rem;
 		border-bottom-left-radius: 1.5rem;
 		border-bottom-right-radius: 1.5rem;
-		margin-left: -2.5rem;
 		font-size: 1.6rem;
 	}
 
