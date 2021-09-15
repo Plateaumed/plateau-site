@@ -688,7 +688,6 @@ p {
 	.plateaumed-header {
 		position: relative;
 		width: 100%;
-		height: 90vh;
 		padding: 10rem 0 4rem 0;
 		background-size: contain;
 	}
@@ -704,7 +703,7 @@ p {
 	}
 
 	.plateaumed-header h1 {
-		font-size: 4.8rem;
+		font-size: 5rem;
 		line-height: 6rem;
 		margin-bottom: 5rem;
 	}
@@ -829,7 +828,8 @@ p {
 	}
 
 	.plateaumed-features p {
-		font-size: 1.2rem;
+		font-size: 1.4rem;
+		line-height: 1.8rem;
 	}
 
 	.plateaumed-footer-contact {
@@ -838,6 +838,7 @@ p {
 
 	.plateaumed-footer div .reach-out {
 		font-size: 2rem;
+		line-height: 3rem;
 	}
 
 	.plateaumed-footer-contact span {
@@ -868,8 +869,12 @@ p {
 		margin-right: 1.8rem;
 	}
 
+	.plateaumed-header {
+		padding: 12rem 0 5rem 0;
+	}
+
 	.plateaumed-header h1 {
-		font-size: 4rem;
+		font-size: 4.5rem;
 		line-height: 5.6rem;
 	}
 
