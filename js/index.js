@@ -13,7 +13,13 @@ document.addEventListener('scroll', () => {
 });
 
 scrollBtn.addEventListener('click', () => {
-    coreFeatures.scrollIntoView({behavior: 'smooth', block: 'start'})
+    let offset = 100;
+    let elementPosition = coreFeatures.getBoundingClientRect().top;
+    let offsetPosition = elementPosition - offset;
+    window.scrollTo({
+        top: offsetPosition,
+        behavior: "smooth"
+   });
 });
 
 sendBtn.addEventListener('click', () => {
