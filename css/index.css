@@ -14,6 +14,11 @@
 }
 
 @font-face {
+	font-family: 'GilroySemibold';
+	src: url('../fonts/Gilroy-Semibold.woff') format('woff');
+}
+
+@font-face {
 	font-family: 'GilroyHeavy';
 	src: url('../fonts/Gilroy-Heavy.woff') format('woff');
 }
@@ -38,6 +43,12 @@ html {
 	font-family: 'GilroyRegular', sans-serif;
 }
 
+*,
+*:before,
+*:after {
+	box-sizing: inherit;
+}
+
 ::-webkit-scrollbar {
 	display: none;
 }
@@ -57,11 +68,11 @@ p {
 .nav-container {
 	position: fixed;
 	height: 4rem;
-	padding: 2rem 8rem;
+	padding: 4rem 8rem;
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	width: calc(100% - 16rem);
+	width: 100%;
 	z-index: 100;
 }
 
@@ -82,6 +93,7 @@ p {
 	font-family: 'GilroyMedium', sans-serif;
 	font-weight: bold;
 	display: flex;
+	align-items: flex-start;
 	justify-content: center;
 }
 
@@ -107,12 +119,8 @@ p {
 .plateaumed-header {
 	position: relative;
 	width: 100%;
-	height: 80vh;
-	display: flex;
-	flex-direction: column;
-	padding: 15rem 0 0 0;
-	align-items: flex-start;
-	justify-content: space-between;
+	height: 100vh;
+	padding: 15rem 0 5rem 0;
 	background-image: url('../img/header-background.png');
 	object-fit: contain;
 	background-repeat: no-repeat;
@@ -143,6 +151,7 @@ p {
 	color: #fa8f12;
 	line-height: 7.2rem;
 	font-family: 'GilroyBlack', sans-serif;
+	margin-bottom: 5.5rem;
 }
 
 .plateaumed-header h1 span {
@@ -153,6 +162,7 @@ p {
 	list-style: none;
 	margin: 0;
 	padding-inline-start: 0;
+	margin-bottom: 7rem;
 }
 
 .plateaumed-header-bullets li {
@@ -160,7 +170,6 @@ p {
 	font-weight: bold;
 	line-height: 3.8rem;
 	font-family: 'GilroyMedium', sans-serif;
-	font-weight: bold;
 	background-image: linear-gradient(90deg, #4052f6, #515bae);
 	background-clip: text;
 	-webkit-background-clip: text;
@@ -200,6 +209,7 @@ p {
 	justify-content: space-between;
 	width: 100%;
 	margin-top: 2rem;
+	margin-bottom: 0.5rem;
 }
 
 .header-contact-us .header-contact-us-entry {
@@ -217,12 +227,17 @@ p {
 	line-height: 4.5rem;
 }
 
-.header-contact-us .header-contact-us-entry input[type='text'] {
-	width: 60%;
+.header-contact-us .header-contact-us-entry div {
+	position: relative;
+	width: 100%;
+}
+
+.header-contact-us .header-contact-us-entry div input[type='text'] {
+	width: 100%;
 	padding: 2rem 3rem;
 	border-radius: 2rem;
 	font-size: 1.8rem;
-	font-family: 'GilroyLight', sans-serif;
+	font-family: 'GilroyRegular', sans-serif;
 	margin: 0;
 	outline: 0;
 	border: 0;
@@ -244,17 +259,20 @@ p {
 	font-size: 2rem !important;
 	margin-left: 2rem;
 	display: none;
+	font-family: 'GilroySemibold', sans-serif;
 }
 
 .header-contact-us .header-contact-us-entry button {
-	height: 6.6rem;
+	height: 100%;
 	background: #191bb4;
 	padding: 1.5rem 5rem;
 	border: 0;
 	border-top-right-radius: 2.5rem;
 	border-bottom-left-radius: 2.5rem;
 	border-bottom-right-radius: 2.5rem;
-	margin-left: -5.2rem;
+	position: absolute;
+	top: 0;
+	right: 0;
 	font-size: 2rem;
 	font-family: 'GilroyBold', sans-serif;
 	color: #fff;
@@ -351,7 +369,7 @@ p {
 	justify-content: flex-start;
 	padding: 1.5rem 0 1.5rem 2rem;
 	border-left: 0.1rem solid #2b2ee9;
-	height: 10rem;
+	height: 18rem;
 }
 
 .administrative-features .plateaumed-features {
@@ -455,7 +473,7 @@ p {
 
 	.nav-container {
 		height: 3rem;
-		width: calc(100% - 6rem);
+		width: 100%;
 		padding: 1rem 3rem;
 	}
 
@@ -469,15 +487,20 @@ p {
 
 	.plateaumed-header {
 		margin-top: 2rem;
-		margin-bottom: 2rem;
+		margin-bottom: 4rem;
 		background: #fff;
-		height: 120vh;
-		padding: 8rem 0 0 0;
+		height: 90vh;
+		padding: 8rem 0 0rem 0;
 	}
 
 	.plateaumed-header h1 {
-		font-size: 2.5rem;
-		line-height: 5rem;
+		font-size: 2rem;
+		line-height: 3rem;
+		margin-bottom: 2rem;
+	}
+
+	.plateaumed-header-bullets {
+		margin-bottom: 2.5rem;
 	}
 
 	.plateaumed-header-bullets li {
@@ -493,6 +516,7 @@ p {
 	.plateaumed-header-background {
 		margin-top: 0;
 		display: block;
+		height: 15rem;
 	}
 
 	.header-contact-us {
@@ -507,8 +531,8 @@ p {
 		font-size: 1.6rem;
 	}
 
-	.header-contact-us .header-contact-us-entry input[type='text'] {
-		width: 60%;
+	.header-contact-us .header-contact-us-entry div input[type='text'] {
+		width: 100%;
 		padding: 1rem;
 		border-radius: 1rem;
 		font-size: 1.4rem;
@@ -578,6 +602,7 @@ p {
 
 	.plateaumed-features {
 		margin-bottom: 2rem;
+		height: 12rem;
 	}
 
 	.administrative-features .plateaumed-features,
@@ -641,14 +666,14 @@ p {
 	}
 }
 
-@media (min-width: 769px) and (max-width: 1000px) {
-	.plateaumed-container {
-		padding: 0 3rem 2rem 3rem;
-	}
-
+@media (min-width: 768px) and (max-width: 1099px) {
 	.nav-container {
 		height: 3.5rem;
-		width: calc(100% - 6rem);
+		padding: 3rem 5.5rem;
+	}
+
+	.plateaumed-container {
+		padding: 0 5.5rem 2rem 5.5rem;
 	}
 
 	.plateaumed-logo {
@@ -656,184 +681,199 @@ p {
 	}
 
 	.nav-contact-us {
-		display: none;
+		width: 52%;
 	}
 
 	.nav-contact-us span {
-		font-size: 1.6rem;
-	}
-
-	.plateaumed-header {
-		margin-top: 3rem;
-		margin-bottom: 2.5rem;
-		background: #fff;
-		height: 120vh;
-		padding: 10rem 0 5rem 0;
-	}
-
-	.plateaumed-header h1 {
-		font-size: 3rem;
-		line-height: 5rem;
-	}
-
-	.plateaumed-header-bullets li {
-		font-size: 1.8rem;
-		line-height: 3rem;
-	}
-
-	.plateaumed-header-bullets .arrow-down {
-		height: 3.5rem;
-		width: 3.5rem;
-	}
-	/* 
-	.header-contact-us {
-		margin-top: 2.5rem;
-	}
-
-	.header-contact-us .header-contact-us-entry {
-		width: 90%;
-	} */
-
-	.header-contact-us .header-contact-us-entry p {
-		font-size: 2rem;
-	}
-
-	.header-contact-us .header-contact-us-entry input[type='text'] {
-		width: 60%;
-		padding: 1rem;
-		border-radius: 1rem;
 		font-size: 1.4rem;
 	}
 
-	::placeholder {
-		font-size: 1.2rem;
+	.nav-contact-us .plateaumed-phone,
+	.nav-contact-us .plateaumed-email {
+		height: 1.8rem;
+		width: 1.8rem;
 	}
 
-	.header-contact-us .header-contact-us-entry button {
-		height: 4rem;
-		background: #191bb4;
-		padding: 1rem 3rem;
-		border: 0;
-		border-top-right-radius: 1rem;
-		border-bottom-left-radius: 1rem;
-		border-bottom-right-radius: 1rem;
-		margin-left: -1.6rem;
+	.plateaumed-header {
+		position: relative;
+		width: 100%;
+		height: 100vh;
+		padding: 10rem 0 4rem 0;
+		background-size: contain;
+	}
+
+	.squares-bg {
+		height: 40rem;
+		width: 30rem;
+	}
+
+	.squares-bg-r {
+		height: 40rem;
+		width: 30rem;
+	}
+
+	.plateaumed-header h1 {
+		font-size: 4.8rem;
+		line-height: 6rem;
+		margin-bottom: 4rem;
+	}
+
+	.plateaumed-header-bullets {
+		list-style: none;
+		margin: 0;
+		padding-inline-start: 0;
+		margin-bottom: 6rem;
+	}
+
+	.plateaumed-header-bullets li {
+		font-size: 2.4rem;
+		line-height: 3.4rem;
+	}
+
+	.plateaumed-header-bullets .arrow-down {
+		height: 3.2rem;
+		width: 3.2rem;
+	}
+
+	.header-contact-us .header-contact-us-entry p {
+		font-size: 2rem;
+		line-height: 4rem;
+	}
+
+	.header-contact-us .header-contact-us-entry div input[type='text'] {
+		width: 100%;
+		padding: 2rem 2.5rem;
+		border-radius: 1.8rem;
 		font-size: 1.6rem;
 	}
 
+	::placeholder {
+		font-size: 1.6rem;
+	}
+
+	#plateaumed-notify {
+		font-size: 1.8rem !important;
+		margin-left: 1.5rem;
+	}
+
+	.header-contact-us .header-contact-us-entry button {
+		padding: 1.5rem 4rem;
+		border: 0;
+		border-top-right-radius: 2.2rem;
+		border-bottom-left-radius: 2.2rem;
+		border-bottom-right-radius: 2.2rem;
+		font-size: 1.8rem;
+	}
+
 	.scroll-down-btn {
-		display: none;
+		margin-bottom: 1rem;
+		height: 4rem;
+		width: 4rem;
+	}
+
+	.scroll-down-btn .chevron-double-down {
+		height: 2rem;
+		width: 2rem;
 	}
 
 	.core-features {
-		margin-bottom: 2.5rem;
+		margin-top: 8rem;
+		margin-bottom: 6rem;
+	}
+
+	.anon-bg {
+		width: 70%;
+		height: 55%;
 	}
 
 	.core-features-header-text,
 	.contact-us-header-text {
-		font-size: 1.8rem;
-		margin-bottom: 2.5rem;
-		margin-left: 2rem;
-		letter-spacing: 0;
+		font-size: 3.2rem;
+		margin-left: 18rem;
+		margin-bottom: 7rem;
 	}
 
 	.core-features-header-text img,
 	.contact-us-header-text img {
-		height: 1.5rem;
-		left: -10%;
+		height: 2.6rem;
+		bottom: -12%;
+		left: -5%;
 	}
 
 	.clinical-features,
 	.administrative-features,
 	.financial-analytics {
-		margin-bottom: 2.5rem;
+		margin-bottom: 8rem;
 	}
 
 	.clinical-features h3,
 	.administrative-features h3,
 	.financial-analytics h3 {
-		font-size: 1.8rem;
+		font-size: 2.8rem;
+		margin-bottom: 1.8rem;
 	}
 
 	.features-wrapper {
-		flex-direction: column;
-		align-items: flex-start;
-		box-shadow: none;
-		padding: 1rem 0;
+		border-radius: 2.8rem;
+		padding: 3.6rem 1.8rem;
 	}
 
 	.plateaumed-features {
-		margin-bottom: 2rem;
+		padding: 1.2rem 0 1.2rem 1.5rem;
+		height: 14rem;
 	}
 
-	.administrative-features .plateaumed-features,
+	.administrative-features .plateaumed-features {
+		width: 25%;
+	}
+
 	.financial-analytics .plateaumed-features {
-		width: 100%;
+		width: 35%;
 	}
 
 	.plateaumed-features h4 {
-		font-size: 1.2rem;
+		font-size: 1.4rem;
+		line-height: 2rem;
+		margin-bottom: 1.2rem;
 	}
 
 	.plateaumed-features p {
 		font-size: 1.2rem;
 	}
 
-	.plateaumed-footer div {
-		display: flex;
-		flex-direction: column;
-		align-items: flex-start;
-		justify-content: space-between;
+	.plateaumed-footer-contact {
+		padding: 1.8rem 0 1.8rem 1.8rem;
 	}
 
 	.plateaumed-footer div .reach-out {
-		font-size: 1.4rem;
-		margin-bottom: 4rem;
-	}
-
-	.plateaumed-footer-contact {
-		margin-bottom: 4rem;
+		font-size: 2rem;
 	}
 
 	.plateaumed-footer-contact span {
-		font-size: 1.4rem;
+		font-size: 1.6rem;
+		margin-top: 1.2rem;
 	}
 
 	.plateaumed-phone-small {
-		height: 1.4rem;
-		width: 1.4rem;
-	}
-
-	.badge-container {
-		float: none;
-		display: flex;
-		flex-direction: column;
-		align-items: flex-start;
-		justify-content: space-between;
+		height: 2rem;
+		width: 2rem;
+		margin-right: 1rem;
 	}
 
 	.badge-container p {
-		font-size: 1.4rem;
-	}
-
-	.badge-wrapper div {
-		display: flex;
-		flex-direction: row;
+		font-size: 2.4rem;
+		margin-bottom: 1.2rem;
 	}
 
 	.badge-container img {
-		height: 3rem;
-		margin-right: 1rem;
+		height: 4.6rem;
+		margin-right: 1.8rem;
 	}
 }
 
-@media (min-width: 1001px) and (max-width: 1200px) {
+@media (min-width: 1100px) and (max-width: 1400px) {
 	.nav-contact-us {
 		width: 50%;
-	}
-
-	.plateaumed-header {
-		padding: 10rem 0 0 0;
 	}
 
 	.plateaumed-header h1 {
@@ -845,6 +885,10 @@ p {
 	.administrative-features h3,
 	.financial-analytics h3 {
 		font-size: 3rem;
+	}
+
+	.plateaumed-features {
+		height: 14rem;
 	}
 
 	.plateaumed-features h4 {
