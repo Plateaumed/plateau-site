@@ -239,7 +239,7 @@ p {
 
 .header-contact-us .header-contact-us-entry div input[type='text'] {
 	width: 100%;
-	padding: 2rem 3rem;
+	padding: 2rem 18rem 2rem 3rem;
 	border-radius: 2rem;
 	font-size: 1.8rem;
 	font-family: 'GilroyRegular', sans-serif;
@@ -537,6 +537,7 @@ p {
 	}
 
 	.header-contact-us {
+		display: block;
 		margin-top: 1.5rem;
 	}
 
@@ -550,7 +551,7 @@ p {
 
 	.header-contact-us .header-contact-us-entry div input[type='text'] {
 		width: 100%;
-		padding: 1.5rem;
+		padding: 1.5rem 12rem 1.5rem 1.5rem;
 		border-radius: 1.7rem;
 		font-size: 1.6rem;
 	}
@@ -628,7 +629,8 @@ p {
 	}
 
 	.plateaumed-features p {
-		font-size: 1.4rem;
+		font-size: 1.6rem;
+		line-height: 2rem;
 	}
 
 	.plateaumed-footer div {
@@ -755,7 +757,7 @@ p {
 
 	.header-contact-us .header-contact-us-entry div input[type='text'] {
 		width: 100%;
-		padding: 2rem 2.5rem;
+		padding: 2rem 14rem 2rem 2.5rem;
 		border-radius: 1.8rem;
 		font-size: 1.6rem;
 	}
