@@ -117,12 +117,15 @@ p {
 .plateaumed-header {
 	position: relative;
 	width: 100%;
-	height: fit-content;
-	padding: 15rem 0 5rem 0;
+	height: 100vh;
+	padding: 10rem 0 5rem 0;
 	background-image: url('../img/header-background.png');
 	object-fit: contain;
 	background-repeat: no-repeat;
 	background-position: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
 }
 
 .squares-bg {
@@ -146,11 +149,11 @@ p {
 .plateaumed-header h1 {
 	font-size: 5.6rem;
 	letter-spacing: 0.2rem;
-	width: 60%;
+	width: 55%;
 	color: #fa8f12;
-	line-height: 7.2rem;
+	line-height: 6.5rem;
 	font-family: 'GilroyBlack', sans-serif;
-	margin-bottom: 5.5rem;
+	margin-bottom: 2.5rem;
 }
 
 .plateaumed-header h1 span {
@@ -161,7 +164,6 @@ p {
 	list-style: none;
 	margin: 0;
 	padding-inline-start: 0;
-	margin-bottom: 7rem;
 }
 
 .plateaumed-header-bullets li {
@@ -705,14 +707,12 @@ p {
 	.plateaumed-header h1 {
 		font-size: 5rem;
 		line-height: 6rem;
-		margin-bottom: 5rem;
 	}
 
 	.plateaumed-header-bullets {
 		list-style: none;
 		margin: 0;
 		padding-inline-start: 0;
-		margin-bottom: 7rem;
 	}
 
 	.plateaumed-header-bullets li {
@@ -865,14 +865,10 @@ p {
 	}
 }
 
-@media (min-width: 1100px) and (max-width: 1400px) {
+@media (min-width: 1100px) and (max-width: 1200px) {
 	.nav-contact-us span {
 		font-size: 1.8rem;
 		margin-right: 1.8rem;
-	}
-
-	.plateaumed-header {
-		padding: 12rem 0 5rem 0;
 	}
 
 	.plateaumed-header h1 {
