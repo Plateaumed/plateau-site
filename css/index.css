@@ -605,6 +605,11 @@ p {
 		margin-bottom: 2.5rem;
 	}
 
+	.clinical-features .plateaumed-features,
+	.administrative-features .plateaumed-features,
+	.financial-analytics .plateaumed-features {
+		width: 100%;
+	}
 	.clinical-features h3,
 	.administrative-features h3,
 	.financial-analytics h3 {
