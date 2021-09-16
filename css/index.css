@@ -377,6 +377,10 @@ p {
 	height: 18rem;
 }
 
+.clinical-features .plateaumed-features {
+	width: 25%;
+}
+
 .administrative-features .plateaumed-features {
 	width: 25%;
 }
