@@ -542,7 +542,7 @@ p {
 	}
 
 	.header-contact-us .header-contact-us-entry {
-		width: 90%;
+		width: 100%;
 	}
 
 	.header-contact-us .header-contact-us-entry p {
@@ -895,6 +895,17 @@ p {
 	.plateaumed-header h1 {
 		width: 70% !important;
 	}
+
+	.plateaumed-features h4 {
+		font-size: 1.6rem;
+		line-height: 2rem;
+	}
+
+	.plateaumed-features p {
+		font-size: 1.4rem;
+		line-height: 2.2rem;
+		font-family: 'GilroyMedium', sans-serif;
+	}
 }
 
 @media (min-width: 1100px) and (max-width: 1440px) {
@@ -932,13 +943,13 @@ p {
 	}
 
 	.plateaumed-features h4 {
-		font-size: 1.6rem;
-		line-height: 2rem;
+		font-size: 1.8rem;
+		line-height: 2.2rem;
 	}
 
 	.plateaumed-features p {
-		font-size: 1.4rem;
-		line-height: 2.2rem;
+		font-size: 1.7rem;
+		line-height: 2rem;
 		font-family: 'GilroyMedium', sans-serif;
 	}
 
