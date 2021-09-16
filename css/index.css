@@ -148,6 +148,7 @@ p {
 
 .plateaumed-header h1,
 .plateaumed-header span {
+	position: relative;
 	font-size: 5.7rem;
 	letter-spacing: 0.2rem;
 	width: 51%;
@@ -157,7 +158,6 @@ p {
 }
 
 .plateaumed-header h1 {
-	margin-right: 1rem;
 	color: #fa8f12;
 }
 
@@ -200,14 +200,12 @@ p {
 }
 
 .plateaumed-header-background {
-	margin-top: 3rem;
 	background-image: url('../img/header-image.svg');
 	background-size: contain;
 	background-repeat: no-repeat;
 	background-position: center;
 	display: none;
 	width: 100%;
-	height: 30rem;
 }
 
 .header-contact-us {
@@ -481,7 +479,7 @@ p {
 
 	.nav-container {
 		width: 100%;
-		padding: 1rem 2rem;
+		padding: 1.5rem 2rem;
 	}
 
 	.plateaumed-logo {
@@ -495,20 +493,27 @@ p {
 	.plateaumed-header {
 		margin-bottom: 4rem;
 		background: #fff;
+		height: fit-content;
 		padding: 8rem 0 0rem 0;
 	}
 
-	.plateaumed-header h1 {
+	.plateaumed-header h1,
+	.plateaumed-header span {
 		font-size: 2.4rem;
-		letter-spacing: 0.1rem;
-		width: 100%;
-		line-height: 3.6rem;
+		letter-spacing: 0.2rem;
+		line-height: 3rem;
+	}
+
+	.plateaumed-header h1 {
+		margin-right: 0;
+		width: 95%;
+		display: inline;
 	}
 
 	.plateaumed-header span {
-		font-size: 2.4rem;
-		margin-left: 0;
-		margin-bottom: 2rem;
+		color: #2e4fb4;
+		width: 51%;
+		margin-bottom: 2.5rem;
 	}
 
 	.plateaumed-header-bullets {
@@ -516,8 +521,8 @@ p {
 	}
 
 	.plateaumed-header-bullets li {
-		font-size: 1.4rem;
-		line-height: 1.8rem;
+		font-size: 1.6rem;
+		line-height: 1.9rem;
 	}
 
 	.plateaumed-header-bullets .arrow-down {
@@ -528,7 +533,7 @@ p {
 	.plateaumed-header-background {
 		margin-top: 0;
 		display: block;
-		height: 15rem;
+		height: 30rem;
 	}
 
 	.header-contact-us {
@@ -545,20 +550,20 @@ p {
 
 	.header-contact-us .header-contact-us-entry div input[type='text'] {
 		width: 100%;
-		padding: 1rem;
-		border-radius: 1rem;
-		font-size: 1.4rem;
+		padding: 1.5rem;
+		border-radius: 1.7rem;
+		font-size: 1.6rem;
 	}
 
 	::placeholder {
-		font-size: 1.2rem;
+		font-size: 1.4rem;
 	}
 
 	.header-contact-us .header-contact-us-entry button {
-		padding: 1rem 3rem;
-		border-top-right-radius: 1.5rem;
-		border-bottom-left-radius: 1.5rem;
-		border-bottom-right-radius: 1.5rem;
+		padding: 1rem 3.5rem;
+		border-top-right-radius: 1.7rem;
+		border-bottom-left-radius: 1.7rem;
+		border-bottom-right-radius: 1.7rem;
 		font-size: 1.6rem;
 	}
 
@@ -579,7 +584,7 @@ p {
 	.contact-us-header-text {
 		font-size: 1.8rem;
 		margin-bottom: 2.5rem;
-		margin-left: 0;
+		margin-left: 1.4rem;
 		letter-spacing: 0;
 	}
 
@@ -598,7 +603,7 @@ p {
 	.clinical-features h3,
 	.administrative-features h3,
 	.financial-analytics h3 {
-		font-size: 1.8rem;
+		font-size: 1.6rem;
 	}
 
 	.features-wrapper {
@@ -619,11 +624,11 @@ p {
 	}
 
 	.plateaumed-features h4 {
-		font-size: 1.2rem;
+		font-size: 1.6rem;
 	}
 
 	.plateaumed-features p {
-		font-size: 1.2rem;
+		font-size: 1.4rem;
 	}
 
 	.plateaumed-footer div {
@@ -636,6 +641,7 @@ p {
 	.plateaumed-footer div .reach-out {
 		font-size: 1.4rem;
 		margin-bottom: 4rem;
+		width: 100%;
 	}
 
 	.plateaumed-footer-contact {
@@ -643,12 +649,12 @@ p {
 	}
 
 	.plateaumed-footer-contact span {
-		font-size: 1.4rem;
+		font-size: 1.6rem;
 	}
 
 	.plateaumed-phone-small {
-		height: 1.4rem;
-		width: 1.4rem;
+		height: 2rem;
+		width: 3rem;
 	}
 
 	.badge-container {
@@ -661,6 +667,7 @@ p {
 
 	.badge-container p {
 		font-size: 1.4rem;
+		line-height: 1.4rem;
 	}
 
 	.badge-wrapper div {
@@ -669,7 +676,7 @@ p {
 	}
 
 	.badge-container img {
-		height: 3rem;
+		height: 3.2rem;
 		margin-right: 1rem;
 	}
 }
