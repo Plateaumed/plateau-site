@@ -433,8 +433,9 @@ p {
 
 .plateaumed-footer div .reach-out {
 	color: #3a3b4a;
-	font-size: 2.6rem;
-	width: 50%;
+	font-size: 2.8rem;
+	line-height: 4.2rem;
+	width: 56%;
 	font-family: 'GilroyMedium';
 }
 
@@ -472,12 +473,12 @@ p {
 .badge-container p {
 	color: #191bb4;
 	font-size: 2.8rem;
+	line-height: 4.2rem;
 	font-family: 'GilroyBold';
-	margin-bottom: 1.5rem;
 }
 
 .badge-container img {
-	height: 5.4rem;
+	height: 5.2rem;
 	margin-right: 2rem;
 }
 
@@ -963,16 +964,5 @@ p {
 	.plateaumed-footer-contact {
 		border-left: 0.1rem solid #ffad4d;
 		padding: 2rem 0 2rem 2rem;
-	}
-
-	.plateaumed-footer div .reach-out {
-		font-size: 2.4rem;
-		line-height: 3.5rem;
-		width: 56%;
-		font-family: 'GilroyMedium';
-	}
-
-	.badge-container img {
-		height: 5rem;
 	}
 }
