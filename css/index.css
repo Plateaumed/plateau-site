@@ -182,19 +182,23 @@ p {
 	font-size: 3.5rem;
 	line-height: 4.2rem;
 	font-family: 'GilroyBold';
-	background: linear-gradient(90deg, #4052f6, #515bae);
 	background: -webkit-linear-gradient(90deg, #4052f6, #515bae);
-	background: -webkit-gradient(linear, 90deg, #4052f6, #515bae);
+	background: -webkit-gradient(
+		linear,
+		left top,
+		left bottom,
+		color-stop(0%, #4052f6),
+		color-stop(100%, #515bae)
+	);
 	background: -moz-linear-gradient(90deg, #4052f6, #515bae);
 	background: -ms-linear-gradient(90deg, #4052f6, #515bae);
 	background: -o-linear-gradient(90deg, #4052f6, #515bae);
 	filter: progid:DXImageTransform.Microsoft.Gradient(startColorStr='#4052f6', endColorStr='#515bae', GradientType=0);
 	-ms-filter: "progid:DXImageTransform.Microsoft.Gradient(startColorStr='#4052f6', endColorStr='#515bae', GradientType=0)";
+	background: linear-gradient(90deg, #4052f6, #515bae);
 	background-clip: text;
 	-webkit-background-clip: text;
-	-moz-background-clip: text;
 	-webkit-text-fill-color: transparent;
-	-moz-text-fill-color: transparent;
 	display: flex;
 	align-items: flex-start;
 	justify-content: flex-start;
@@ -304,6 +308,9 @@ p {
 }
 
 .scroll-down-btn {
+	display: flex;
+	align-items: center;
+	justify-content: center;
 	margin-bottom: 1rem;
 	height: 5rem;
 	width: 5rem;
