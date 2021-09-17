@@ -761,12 +761,12 @@ p {
 
 	.plateaumed-header h1 {
 		width: 85%;
-		font-size: 3.6rem;
+		font-size: 3.8rem;
 		line-height: 6rem;
 	}
 
 	.plateaumed-header .plateaumed-africa-text {
-		font-size: 3.6rem;
+		font-size: 4.2rem;
 	}
 
 	.plateaumed-header-bullets {
@@ -943,6 +943,95 @@ p {
 		font-size: 2.4rem !important;
 		line-height: 4.2rem;
 		width: 60%;
+	}
+}
+
+@media (min-width: 1100px) and (max-width: 1365px) {
+	.plateaumed-header h1 {
+		width: 85% !important;
+		font-size: 5rem !important;
+	}
+
+	.plateaumed-header-bullets li {
+		font-size: 3rem !important;
+		line-height: 4.2rem !important;
+	}
+}
+
+@media (min-width: 1366px) and (max-width: 1439px) {
+	.plateaumed-header h1 {
+		width: 85% !important;
+		font-size: 5.5rem !important;
+	}
+
+	.plateaumed-header-bullets li {
+		font-size: 3.2rem !important;
+		line-height: 4.2rem !important;
+	}
+}
+
+@media (min-width: 1440px) and (max-width: 1599px) {
+	.plateaumed-header h1 {
+		width: 80% !important;
+		font-size: 5.8rem !important;
+	}
+
+	.plateaumed-header-bullets li {
+		font-size: 3.2rem !important;
+		line-height: 4.2rem !important;
+	}
+}
+
+@media (min-width: 1600px) and (max-width: 1919px) {
+	.plateaumed-header h1 {
+		width: 65% !important;
+	}
+
+	.plateaumed-header-bullets li {
+		font-size: 3.8rem !important;
+		line-height: 5.2rem !important;
+	}
+}
+
+@media (min-width: 1920px) and (max-width: 2260px) {
+	.plateaumed-header h1 {
+		width: 60% !important;
+	}
+
+	.plateaumed-header h1,
+	.plateaumed-header .plateaumed-africa-text {
+		font-size: 7rem !important;
+		line-height: 8.2rem !important;
+	}
+
+	.plateaumed-header .plateaumed-africa-text {
+		width: 45% !important;
+	}
+
+	.plateaumed-header-bullets li {
+		font-size: 4.5rem !important;
+		line-height: 5.2rem !important;
+	}
+}
+
+@media (min-width: 2261px) and (max-width: 2560px) {
+	.plateaumed-header h1 {
+		width: 50% !important;
+	}
+
+	.plateaumed-header h1,
+	.plateaumed-header .plateaumed-africa-text {
+		font-size: 8rem !important;
+		line-height: 9.2rem !important;
+	}
+
+	.plateaumed-header .plateaumed-africa-text {
+		width: 55% !important;
+	}
+
+	.plateaumed-header-bullets li {
+		font-size: 5.8rem !important;
+		line-height: 7.2rem !important;
 	}
 }
 
