@@ -86,7 +86,7 @@ p {
 	color: #121483;
 	font-size: 2rem;
 	line-height: 3rem;
-	font-family: 'GilroyMedium';
+	font-family: 'GilroyBold';
 	display: inline-flex;
 	align-items: center;
 	justify-content: center;
@@ -149,9 +149,8 @@ p {
 .plateaumed-header h1,
 .plateaumed-header .plateaumed-africa-text {
 	position: relative;
-	font-size: 5.7rem;
+	font-size: 6rem;
 	letter-spacing: 0.2rem;
-	width: 60%;
 	line-height: 6.5rem;
 	font-family: 'GilroyBlack';
 	display: inline-flex;
@@ -159,11 +158,14 @@ p {
 
 .plateaumed-header h1 {
 	color: #fa8f12;
+	width: 63%;
+	word-break: break-word;
 }
 
 .plateaumed-header .plateaumed-africa-text {
 	color: #2e4fb4;
 	margin-bottom: 2.5rem;
+	width: 42%;
 }
 
 .plateaumed-header-bullets {
