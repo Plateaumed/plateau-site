@@ -125,7 +125,7 @@ p {
 	background-position: center;
 	display: flex;
 	flex-direction: column;
-	justify-content: space-between;
+	justify-content: space-around;
 }
 
 .squares-bg {
@@ -147,7 +147,7 @@ p {
 }
 
 .plateaumed-header h1,
-.plateaumed-header p {
+.plateaumed-header .plateaumed-africa-text {
 	position: relative;
 	font-size: 5.7rem;
 	letter-spacing: 0.2rem;
@@ -161,7 +161,7 @@ p {
 	color: #fa8f12;
 }
 
-.plateaumed-header p {
+.plateaumed-header .plateaumed-africa-text {
 	color: #2e4fb4;
 	margin-bottom: 2.5rem;
 }
@@ -214,6 +214,12 @@ p {
 }
 
 .header-contact-us {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+}
+
+.header-contact-us .header-contact-us-wrapper {
 	display: flex;
 	align-items: flex-end;
 	justify-content: space-between;
@@ -503,7 +509,7 @@ p {
 	}
 
 	.plateaumed-header h1,
-	.plateaumed-header p {
+	.plateaumed-header .plateaumed-africa-text {
 		font-size: 2.4rem;
 		letter-spacing: 0.2rem;
 		line-height: 3rem;
@@ -515,7 +521,7 @@ p {
 		display: inline;
 	}
 
-	.plateaumed-header p {
+	.plateaumed-header .plateaumed-africa-text {
 		color: #2e4fb4;
 		width: 51%;
 		margin-bottom: 2.5rem;
@@ -542,7 +548,7 @@ p {
 		height: 30rem;
 	}
 
-	.header-contact-us {
+	.header-contact-us .header-contact-us-wrapper {
 		display: block;
 		margin-top: 1.5rem;
 	}
@@ -741,7 +747,7 @@ p {
 		line-height: 6rem;
 	}
 
-	.plateaumed-header p {
+	.plateaumed-header .plateaumed-africa-text {
 		font-size: 3.8rem;
 	}
 
@@ -931,7 +937,7 @@ p {
 		line-height: 5.6rem;
 	}
 
-	.plateaumed-header p {
+	.plateaumed-header .plateaumed-africa-text {
 		font-size: 4.2rem;
 	}
 
