@@ -74,7 +74,7 @@ p {
 }
 
 .plateaumed-logo {
-	height: 3.8rem;
+	height: 5rem;
 }
 
 .nav-contact-us {
@@ -158,7 +158,7 @@ p {
 
 .plateaumed-header h1 {
 	color: #fa8f12;
-	width: 63%;
+	width: 75%;
 	word-break: break-word;
 }
 
@@ -179,8 +179,8 @@ p {
 }
 
 .plateaumed-header-bullets li {
-	font-size: 2.8rem;
-	line-height: 3.8rem;
+	font-size: 3.5rem;
+	line-height: 4.2rem;
 	font-family: 'GilroyBold';
 	background: linear-gradient(90deg, #4052f6, #515bae);
 	background: -webkit-linear-gradient(90deg, #4052f6, #515bae);
@@ -238,11 +238,11 @@ p {
 }
 
 .header-contact-us .header-contact-us-entry p {
-	font-size: 2.4rem;
+	font-size: 2.5rem;
 	font-family: 'GilroyRegular';
 	font-weight: 600;
 	color: #121483;
-	line-height: 4.5rem;
+	line-height: 3rem;
 	letter-spacing: 0.1rem;
 }
 
@@ -338,8 +338,8 @@ p {
 .core-features-header-text,
 .contact-us-header-text {
 	position: relative;
-	font-size: 3.6rem;
-	font-family: 'GilroyMedium';
+	font-size: 4rem;
+	font-family: 'GilroyBold';
 	letter-spacing: 0.2rem;
 	color: #121483;
 	margin-left: 20rem;
@@ -366,7 +366,7 @@ p {
 	color: #2b2ee9;
 	font-size: 3.4rem;
 	letter-spacing: 0.2rem;
-	font-family: 'GilroyMedium';
+	font-family: 'GilroyBold';
 	margin-bottom: 2rem;
 }
 
@@ -406,11 +406,12 @@ p {
 	line-height: 2.5rem;
 	font-family: 'GilroyMedium';
 	margin-bottom: 1.5rem;
+	color: #000109;
 }
 
 .plateaumed-features p {
 	font-size: 2rem;
-	color: #3a3b4a;
+	color: #000109;
 	font-family: 'GilroyMedium';
 }
 
@@ -443,13 +444,13 @@ p {
 	justify-content: space-between;
 	color: #3a3b4a;
 	font-size: 2rem;
-	font-family: 'GilroyMedium';
+	font-family: 'GilroyRegular';
 	margin-top: 1.5rem;
 }
 
 .plateaumed-phone-small {
-	height: 2.2rem;
-	width: 2.2rem;
+	height: 2rem;
+	width: 2rem;
 	margin-right: 1rem;
 	display: inline-block;
 }
@@ -929,14 +930,12 @@ p {
 
 @media (min-width: 1100px) and (max-width: 1440px) {
 	.nav-contact-us p {
-		font-size: 1.8rem;
+		font-size: 2rem;
 		margin-right: 1.8rem;
 	}
 
 	.plateaumed-header h1 {
-		width: 58%;
-		font-size: 4.2rem;
-		line-height: 5.6rem;
+		width: 85%;
 	}
 
 	.plateaumed-header .plateaumed-africa-text {
@@ -961,17 +960,6 @@ p {
 		width: 35%;
 	}
 
-	.plateaumed-features h4 {
-		font-size: 1.8rem;
-		line-height: 2.2rem;
-	}
-
-	.plateaumed-features p {
-		font-size: 1.7rem;
-		line-height: 2rem;
-		font-family: 'GilroyMedium';
-	}
-
 	.plateaumed-footer-contact {
 		border-left: 0.1rem solid #ffad4d;
 		padding: 2rem 0 2rem 2rem;
@@ -982,19 +970,6 @@ p {
 		line-height: 3.5rem;
 		width: 56%;
 		font-family: 'GilroyMedium';
-	}
-
-	.plateaumed-footer-contact p {
-		font-size: 1.8rem;
-	}
-
-	.plateaumed-phone-small {
-		height: 2rem;
-		width: 2rem;
-	}
-
-	.badge-container p {
-		font-size: 2.4rem;
 	}
 
 	.badge-container img {
