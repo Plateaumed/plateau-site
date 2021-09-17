@@ -182,8 +182,8 @@ p {
 	font-size: 3.5rem;
 	line-height: 4.2rem;
 	font-family: 'GilroyBold';
-	background: #4052f6;
-	background: -webkit-linear-gradient(90deg, #4052f6, #515bae);
+	color: #4052f6;
+	/* background: -webkit-linear-gradient(90deg, #4052f6, #515bae);
 	background: -webkit-gradient(
 		linear,
 		left top,
@@ -199,7 +199,7 @@ p {
 	background: linear-gradient(90deg, #4052f6, #515bae);
 	background-clip: text;
 	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
+	-webkit-text-fill-color: transparent; */
 	display: flex;
 	align-items: flex-start;
 	justify-content: flex-start;
