@@ -81,7 +81,7 @@ p {
 	clear: right;
 }
 
-.nav-contact-us span {
+.nav-contact-us p {
 	color: #121483;
 	font-size: 2rem;
 	line-height: 3rem;
@@ -147,21 +147,21 @@ p {
 }
 
 .plateaumed-header h1,
-.plateaumed-header span {
+.plateaumed-header p {
 	position: relative;
 	font-size: 5.7rem;
 	letter-spacing: 0.2rem;
-	width: 51%;
+	width: 55%;
 	line-height: 6.5rem;
 	font-family: 'GilroyBlack', sans-serif;
-	display: inline-block;
+	display: inline-flex;
 }
 
 .plateaumed-header h1 {
 	color: #fa8f12;
 }
 
-.plateaumed-header span {
+.plateaumed-header p {
 	color: #2e4fb4;
 	margin-bottom: 2.5rem;
 }
@@ -178,6 +178,9 @@ p {
 	line-height: 3.8rem;
 	font-family: 'GilroyMedium', sans-serif;
 	background-image: linear-gradient(90deg, #4052f6, #515bae);
+	background-image: -webkit-linear-gradient(90deg, #4052f6, #515bae);
+	background-image: -moz-linear-gradient(90deg, #4052f6, #515bae);
+	background-image: -ms-linear-gradient(90deg, #4052f6, #515bae);
 	background-clip: text;
 	-webkit-background-clip: text;
 	-moz-background-clip: text;
@@ -427,7 +430,7 @@ p {
 	font-family: 'GilroyMedium', sans-serif;
 }
 
-.plateaumed-footer-contact span {
+.plateaumed-footer-contact p {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
@@ -502,7 +505,7 @@ p {
 	}
 
 	.plateaumed-header h1,
-	.plateaumed-header span {
+	.plateaumed-header p {
 		font-size: 2.4rem;
 		letter-spacing: 0.2rem;
 		line-height: 3rem;
@@ -514,7 +517,7 @@ p {
 		display: inline;
 	}
 
-	.plateaumed-header span {
+	.plateaumed-header p {
 		color: #2e4fb4;
 		width: 51%;
 		margin-bottom: 2.5rem;
@@ -659,7 +662,7 @@ p {
 		margin-bottom: 4rem;
 	}
 
-	.plateaumed-footer-contact span {
+	.plateaumed-footer-contact p {
 		font-size: 1.6rem;
 	}
 
@@ -705,7 +708,7 @@ p {
 		height: 3.5rem;
 	}
 
-	.nav-contact-us span {
+	.nav-contact-us p {
 		font-size: 1.4rem;
 		margin-right: 1.8rem;
 	}
@@ -739,7 +742,7 @@ p {
 		line-height: 6rem;
 	}
 
-	.plateaumed-header span {
+	.plateaumed-header p {
 		font-size: 3.8rem;
 	}
 
@@ -878,7 +881,7 @@ p {
 		font-family: 'GilroyMedium', sans-serif;
 	}
 
-	.plateaumed-footer-contact span {
+	.plateaumed-footer-contact p {
 		font-size: 1.6rem;
 		margin-top: 1.2rem;
 	}
@@ -918,7 +921,7 @@ p {
 }
 
 @media (min-width: 1100px) and (max-width: 1440px) {
-	.nav-contact-us span {
+	.nav-contact-us p {
 		font-size: 1.8rem;
 		margin-right: 1.8rem;
 	}
@@ -929,7 +932,7 @@ p {
 		line-height: 5.6rem;
 	}
 
-	.plateaumed-header span {
+	.plateaumed-header p {
 		font-size: 4.2rem;
 	}
 
@@ -974,7 +977,7 @@ p {
 		font-family: 'GilroyMedium', sans-serif;
 	}
 
-	.plateaumed-footer-contact span {
+	.plateaumed-footer-contact p {
 		font-size: 1.8rem;
 	}
 
