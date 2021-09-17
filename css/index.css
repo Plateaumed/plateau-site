@@ -1,36 +1,37 @@
 @font-face {
-	font-family: 'Gilroy';
-	src: url('../fonts/Gilroy-Light.woff') format('woff');
-}
-
-@font-face {
 	font-family: 'GilroyBlack';
-	src: url('../fonts/Gilroy-Black.woff') format('woff');
+	src: url('../fonts/Gilroy-Black.woff') format('woff'),
+		url('../fonts/Gilroy-Black.ttf') format('ttf');
 }
 
 @font-face {
 	font-family: 'GilroyBold';
-	src: url('../fonts/Gilroy-Bold.woff') format('woff');
+	src: url('../fonts/Gilroy-Bold.woff') format('woff'),
+		url('../fonts/Gilroy-Bold.ttf') format('ttf');
 }
 
 @font-face {
 	font-family: 'GilroySemibold';
-	src: url('../fonts/Gilroy-Semibold.woff') format('woff');
+	src: url('../fonts/Gilroy-Semibold.woff') format('woff'),
+		url('../fonts/Gilroy-Semibold.ttf') format('ttf');
 }
 
 @font-face {
 	font-family: 'GilroyHeavy';
-	src: url('../fonts/Gilroy-Heavy.woff') format('woff');
+	src: url('../fonts/Gilroy-Heavy.woff') format('woff'),
+		url('../fonts/Gilroy-Heavy.ttf') format('ttf');
 }
 
 @font-face {
 	font-family: 'GilroyMedium';
-	src: url('../fonts/Gilroy-Medium.woff') format('woff');
+	src: url('../fonts/Gilroy-Medium.woff') format('woff'),
+		url('../fonts/Gilroy-Medium.ttf') format('ttf');
 }
 
 @font-face {
 	font-family: 'GilroyRegular';
-	src: url('../fonts/Gilroy-Regular.woff') format('woff');
+	src: url('../fonts/Gilroy-Regular.woff') format('woff'),
+		url('../fonts/Gilroy-Regular.ttf') format('ttf');
 }
 
 body,
@@ -40,7 +41,7 @@ html {
 	margin: 0;
 	box-sizing: border-box;
 	background-color: #fff;
-	font-family: 'GilroyRegular', sans-serif;
+	font-family: 'GilroyRegular';
 }
 
 *,
@@ -85,8 +86,7 @@ p {
 	color: #121483;
 	font-size: 2rem;
 	line-height: 3rem;
-	font-family: 'GilroyMedium', sans-serif;
-	font-weight: bold;
+	font-family: 'GilroyMedium';
 	display: inline-flex;
 	align-items: center;
 	justify-content: center;
@@ -118,7 +118,7 @@ p {
 	position: relative;
 	width: 100%;
 	height: 100vh;
-	padding: 14rem 0 5rem 0;
+	padding: 13rem 0 5rem 0;
 	background-image: url('../img/header-background.png');
 	object-fit: contain;
 	background-repeat: no-repeat;
@@ -151,9 +151,9 @@ p {
 	position: relative;
 	font-size: 5.7rem;
 	letter-spacing: 0.2rem;
-	width: 55%;
+	width: 60%;
 	line-height: 6.5rem;
-	font-family: 'GilroyBlack', sans-serif;
+	font-family: 'GilroyBlack';
 	display: inline-flex;
 }
 
@@ -170,17 +170,19 @@ p {
 	list-style: none;
 	margin: 0;
 	padding-inline-start: 0;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: center;
 }
 
 .plateaumed-header-bullets li {
 	font-size: 2.8rem;
-	font-weight: bold;
 	line-height: 3.8rem;
-	font-family: 'GilroyMedium', sans-serif;
-	background-image: linear-gradient(90deg, #4052f6, #515bae);
-	background-image: -webkit-linear-gradient(90deg, #4052f6, #515bae);
-	background-image: -moz-linear-gradient(90deg, #4052f6, #515bae);
-	background-image: -ms-linear-gradient(90deg, #4052f6, #515bae);
+	font-family: 'GilroyBold';
+	background: linear-gradient(90deg, #4052f6, #515bae);
+	background: -webkit-linear-gradient(90deg, #4052f6, #515bae);
+	background: -moz-linear-gradient(90deg, #4052f6, #515bae);
 	background-clip: text;
 	-webkit-background-clip: text;
 	-moz-background-clip: text;
@@ -229,10 +231,11 @@ p {
 
 .header-contact-us .header-contact-us-entry p {
 	font-size: 2.4rem;
-	font-family: 'GilroyRegular', sans-serif;
-	color: #121483;
+	font-family: 'GilroyRegular';
 	font-weight: 600;
+	color: #121483;
 	line-height: 4.5rem;
+	letter-spacing: 0.1rem;
 }
 
 .header-contact-us .header-contact-us-entry div {
@@ -245,7 +248,7 @@ p {
 	padding: 2rem 18rem 2rem 3rem;
 	border-radius: 2rem;
 	font-size: 1.8rem;
-	font-family: 'GilroyRegular', sans-serif;
+	font-family: 'GilroyRegular';
 	margin: 0;
 	outline: 0;
 	border: 0;
@@ -259,7 +262,7 @@ p {
 ::placeholder {
 	font-size: 2rem;
 	color: #a6afc2;
-	font-family: 'GilroyRegular', sans-serif;
+	font-family: 'GilroyRegular';
 }
 
 #plateaumed-notify {
@@ -267,7 +270,7 @@ p {
 	font-size: 2rem !important;
 	margin-left: 2rem;
 	display: none;
-	font-family: 'GilroySemibold', sans-serif;
+	font-family: 'GilroySemibold';
 }
 
 .header-contact-us .header-contact-us-entry button {
@@ -282,7 +285,7 @@ p {
 	top: 0;
 	right: 0;
 	font-size: 2rem;
-	font-family: 'GilroyBold', sans-serif;
+	font-family: 'GilroyBold';
 	color: #fff;
 	cursor: pointer;
 }
@@ -328,9 +331,8 @@ p {
 .contact-us-header-text {
 	position: relative;
 	font-size: 3.6rem;
-	font-family: 'GilroyMedium', sans-serif;
+	font-family: 'GilroyMedium';
 	letter-spacing: 0.2rem;
-	font-weight: bold;
 	color: #121483;
 	margin-left: 20rem;
 	margin-bottom: 8rem;
@@ -356,8 +358,7 @@ p {
 	color: #2b2ee9;
 	font-size: 3.4rem;
 	letter-spacing: 0.2rem;
-	font-family: 'GilroyMedium', sans-serif;
-	font-weight: bold;
+	font-family: 'GilroyMedium';
 	margin-bottom: 2rem;
 }
 
@@ -395,16 +396,14 @@ p {
 .plateaumed-features h4 {
 	font-size: 2rem;
 	line-height: 2.5rem;
-	font-family: 'GilroyMedium', sans-serif;
-	font-weight: 600;
+	font-family: 'GilroyMedium';
 	margin-bottom: 1.5rem;
 }
 
 .plateaumed-features p {
 	font-size: 2rem;
 	color: #3a3b4a;
-	font-family: 'GilroyMedium', sans-serif;
-	font-weight: 500;
+	font-family: 'GilroyMedium';
 }
 
 .footer-contact-container {
@@ -426,8 +425,8 @@ p {
 .plateaumed-footer div .reach-out {
 	color: #3a3b4a;
 	font-size: 2.6rem;
-	width: 38%;
-	font-family: 'GilroyMedium', sans-serif;
+	width: 50%;
+	font-family: 'GilroyMedium';
 }
 
 .plateaumed-footer-contact p {
@@ -436,7 +435,7 @@ p {
 	justify-content: space-between;
 	color: #3a3b4a;
 	font-size: 2rem;
-	font-family: 'GilroyMedium', sans-serif;
+	font-family: 'GilroyMedium';
 	margin-top: 1.5rem;
 }
 
@@ -464,8 +463,7 @@ p {
 .badge-container p {
 	color: #191bb4;
 	font-size: 2.8rem;
-	font-family: 'GilroyBold', sans-serif;
-	font-weight: 500;
+	font-family: 'GilroyBold';
 	margin-bottom: 1.5rem;
 }
 
@@ -535,6 +533,7 @@ p {
 	.plateaumed-header-bullets .arrow-down {
 		height: 2rem;
 		width: 2rem;
+		margin-right: 1rem;
 	}
 
 	.plateaumed-header-background {
@@ -867,7 +866,7 @@ p {
 	.plateaumed-features p {
 		font-size: 1.2rem;
 		line-height: 2.8rem;
-		font-family: 'GilroyMedium', sans-serif;
+		font-family: 'GilroyMedium';
 	}
 
 	.plateaumed-footer-contact {
@@ -878,7 +877,7 @@ p {
 		font-size: 2rem;
 		line-height: 3.4rem;
 		width: 60%;
-		font-family: 'GilroyMedium', sans-serif;
+		font-family: 'GilroyMedium';
 	}
 
 	.plateaumed-footer-contact p {
@@ -916,7 +915,7 @@ p {
 	.plateaumed-features p {
 		font-size: 1.4rem;
 		line-height: 2.2rem;
-		font-family: 'GilroyMedium', sans-serif;
+		font-family: 'GilroyMedium';
 	}
 }
 
@@ -962,7 +961,7 @@ p {
 	.plateaumed-features p {
 		font-size: 1.7rem;
 		line-height: 2rem;
-		font-family: 'GilroyMedium', sans-serif;
+		font-family: 'GilroyMedium';
 	}
 
 	.plateaumed-footer-contact {
@@ -973,8 +972,8 @@ p {
 	.plateaumed-footer div .reach-out {
 		font-size: 2.4rem;
 		line-height: 3.5rem;
-		width: 55%;
-		font-family: 'GilroyMedium', sans-serif;
+		width: 56%;
+		font-family: 'GilroyMedium';
 	}
 
 	.plateaumed-footer-contact p {
