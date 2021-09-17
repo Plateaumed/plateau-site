@@ -201,6 +201,17 @@ p {
 	margin-bottom: 3rem;
 }
 
+.plateaumed-header-bullets li::before {
+	content: '';
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 35px;
+	background-image: linear-gradient(90deg, #4052f6, #515bae);
+}
+
 .plateaumed-header-bullets .arrow-down {
 	height: 3.5rem;
 	width: 3.5rem;
