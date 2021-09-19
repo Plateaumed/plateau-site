@@ -261,7 +261,7 @@ p {
 	width: 100%;
 }
 
-.header-contact-us .header-contact-us-entry div input[type='text'] {
+.header-contact-us .header-contact-us-entry div input[type='email'] {
 	width: 100%;
 	padding: 2rem 18rem 2rem 3rem;
 	border-radius: 2rem;
@@ -273,7 +273,7 @@ p {
 	box-shadow: -0.1rem 0.4rem 0.5rem rgba(0, 0, 0, 0.1);
 }
 
-.header-contact-us .header-contact-us-entry input[type='text']:focus {
+.header-contact-us .header-contact-us-entry input[type='email']:focus {
 	border: 0.2rem solid #191bb4;
 }
 
@@ -284,7 +284,7 @@ p {
 }
 
 #plateaumed-notify {
-	color: #02c22c !important;
+	color: #02c22c;
 	font-size: 2rem !important;
 	margin-left: 2rem;
 	display: none;
@@ -579,7 +579,7 @@ p {
 		font-size: 1.6rem;
 	}
 
-	.header-contact-us .header-contact-us-entry div input[type='text'] {
+	.header-contact-us .header-contact-us-entry div input[type='email'] {
 		width: 100%;
 		padding: 1.5rem 12rem 1.5rem 1.5rem;
 		border-radius: 1.7rem;
@@ -790,7 +790,7 @@ p {
 		line-height: 4rem;
 	}
 
-	.header-contact-us .header-contact-us-entry div input[type='text'] {
+	.header-contact-us .header-contact-us-entry div input[type='email'] {
 		width: 100%;
 		padding: 2rem 14rem 2rem 2.5rem;
 		border-radius: 1.8rem;
