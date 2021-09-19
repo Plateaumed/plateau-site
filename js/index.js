@@ -42,7 +42,11 @@ sendBtn.addEventListener('click', async () => {
                 notifyText.innerHTML = "An error occured, please try again";
                 notifyText.style.color = "red";
             }
-            else notifyText.innerHTML = 'Your email has been successfully sent!'
+            else {
+                notifyText.innerHTML = result.message;
+                notifyText.style.color = '#02c22c';
+                emailInput.value = "";
+            }
     }
     notifyText.style.display = 'block';
     setTimeout(() => {
