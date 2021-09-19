@@ -983,9 +983,9 @@ p {
 }
 
 @media (min-width: 1600px) and (max-width: 1919px) {
-	.plateaumed-header h1 {
-		width: 65% !important;
-	}
+	/* .plateaumed-header h1 {
+		width: 64% !important;
+	} */
 
 	.plateaumed-header-bullets li {
 		font-size: 3.8rem !important;
