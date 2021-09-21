@@ -1,37 +1,31 @@
 @font-face {
 	font-family: 'GilroyBlack';
-	src: url('../fonts/Gilroy-Black.woff') format('woff'),
-		url('../fonts/Gilroy-Black.ttf') format('ttf');
+	src: url('../fonts/Gilroy-Black.woff') format('woff');
 }
 
 @font-face {
 	font-family: 'GilroyBold';
-	src: url('../fonts/Gilroy-Bold.woff') format('woff'),
-		url('../fonts/Gilroy-Bold.ttf') format('ttf');
+	src: url('../fonts/Gilroy-Bold.woff') format('woff');
 }
 
 @font-face {
 	font-family: 'GilroySemibold';
-	src: url('../fonts/Gilroy-Semibold.woff') format('woff'),
-		url('../fonts/Gilroy-Semibold.ttf') format('ttf');
+	src: url('../fonts/Gilroy-Semibold.woff') format('woff');
 }
 
 @font-face {
 	font-family: 'GilroyHeavy';
-	src: url('../fonts/Gilroy-Heavy.woff') format('woff'),
-		url('../fonts/Gilroy-Heavy.ttf') format('ttf');
+	src: url('../fonts/Gilroy-Heavy.woff') format('woff');
 }
 
 @font-face {
 	font-family: 'GilroyMedium';
-	src: url('../fonts/Gilroy-Medium.woff') format('woff'),
-		url('../fonts/Gilroy-Medium.ttf') format('ttf');
+	src: url('../fonts/Gilroy-Medium.woff') format('woff');
 }
 
 @font-face {
 	font-family: 'GilroyRegular';
-	src: url('../fonts/Gilroy-Regular.woff') format('woff'),
-		url('../fonts/Gilroy-Regular.ttf') format('ttf');
+	src: url('../fonts/Gilroy-Regular.woff') format('woff');
 }
 
 body,
@@ -91,7 +85,7 @@ p {
 	align-items: center;
 	justify-content: center;
 	padding-top: 1rem;
-	margin-right: 2.2rem;
+	margin-right: 4.9rem;
 }
 
 .nav-contact-us .plateaumed-phone,
@@ -120,7 +114,7 @@ p {
 	height: 100vh;
 	padding: 13rem 0 5rem 0;
 	background-image: url('../img/header-background.png');
-	object-fit: contain;
+	background-size: contain;
 	background-repeat: no-repeat;
 	background-position: center;
 	display: flex;
@@ -529,13 +523,17 @@ p {
 	.plateaumed-header h1,
 	.plateaumed-header .plateaumed-africa-text {
 		font-size: 2.4rem;
-		letter-spacing: 0.2rem;
+		letter-spacing: 0.1rem;
 		line-height: 3rem;
 	}
 
 	.plateaumed-header h1 {
 		margin-right: 0;
 		width: 95%;
+		display: inline;
+	}
+
+	.plateaumed-header h1 br {
 		display: inline;
 	}
 
@@ -704,7 +702,7 @@ p {
 
 	.badge-container p {
 		font-size: 1.4rem;
-		line-height: 1.4rem;
+		line-height: 2rem;
 	}
 
 	.badge-wrapper div {
@@ -760,7 +758,7 @@ p {
 	}
 
 	.plateaumed-header h1 {
-		width: 85%;
+		width: 92%;
 		font-size: 3.8rem;
 		line-height: 6rem;
 	}
@@ -1038,7 +1036,7 @@ p {
 @media (min-width: 1100px) and (max-width: 1440px) {
 	.nav-contact-us p {
 		font-size: 2rem;
-		margin-right: 1.8rem;
+		margin-right: 4.9rem;
 	}
 
 	.plateaumed-header h1 {
