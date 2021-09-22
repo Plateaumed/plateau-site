@@ -757,7 +757,8 @@ p {
 		position: relative;
 		width: 100%;
 		padding: 10rem 0 4rem 0;
-		background: none;
+		background-size: contain;
+		background-position-y: 20%;
 	}
 
 	.squares-bg {
