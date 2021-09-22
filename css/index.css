@@ -490,7 +490,7 @@ p {
 	margin-right: 2rem;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
 	.plateaumed-container {
 		padding: 0 2rem 2rem 2rem;
 	}
@@ -529,7 +529,7 @@ p {
 
 	.plateaumed-header h1 {
 		margin-right: 0;
-		width: 95%;
+		width: 80%;
 		display: inline;
 	}
 
@@ -716,13 +716,26 @@ p {
 	}
 }
 
-@media (min-width: 769px) and (max-width: 1099px) {
+@media (min-width: 320px) and (max-width: 375px) {
+	.plateaumed-header h1 {
+		width: 85%;
+	}
+
+	.plateaumed-header h1,
+	.plateaumed-header .plateaumed-africa-text {
+		font-size: 1.7rem;
+		letter-spacing: 0.1rem;
+		line-height: 2.8rem;
+	}
+}
+
+@media (min-width: 768px) and (max-width: 1099px) {
 	.nav-container {
-		padding: 2rem 5.5rem;
+		padding: 2rem 4.5rem;
 	}
 
 	.plateaumed-container {
-		padding: 0 5.5rem 2rem 5.5rem;
+		padding: 0 4.5rem 2rem 4.5rem;
 	}
 
 	.plateaumed-logo {
@@ -836,16 +849,16 @@ p {
 
 	.core-features-header-text,
 	.contact-us-header-text {
-		font-size: 3.2rem;
-		margin-left: 18rem;
+		font-size: 2.8rem;
+		margin-left: 8rem;
 		margin-bottom: 7rem;
 	}
 
 	.core-features-header-text img,
 	.contact-us-header-text img {
-		height: 2.6rem;
+		height: 2.2rem;
 		bottom: -12%;
-		left: -5%;
+		left: -20%;
 	}
 
 	.clinical-features,
@@ -857,7 +870,7 @@ p {
 	.clinical-features h3,
 	.administrative-features h3,
 	.financial-analytics h3 {
-		font-size: 2.8rem;
+		font-size: 2.4rem;
 		margin-bottom: 1.8rem;
 	}
 
@@ -880,14 +893,14 @@ p {
 	}
 
 	.plateaumed-features h4 {
-		font-size: 1.3rem;
+		font-size: 1.2rem;
 		line-height: 2rem;
 		margin-bottom: 1.2rem;
 	}
 
 	.plateaumed-features p {
 		font-size: 1.2rem;
-		line-height: 2.8rem;
+		line-height: 1.8rem;
 		font-family: 'GilroyMedium';
 	}
 
@@ -921,6 +934,12 @@ p {
 	.badge-container img {
 		height: 4.6rem;
 		margin-right: 1.8rem;
+	}
+}
+
+@media (min-width: 768px) {
+	.plateaumed-header {
+		background: none;
 	}
 }
 
