@@ -1,0 +1,66 @@
+const form = document.getElementById('form');
+const username = document.getElementById('username');
+const phonenumber = document.getElementById('phonenumber');
+const hospital = document.getElementById('hospital');
+const address = document.getElementById('address');
+
+form.addEventListener('submit', e => {
+	e.preventDefault();
+	
+	checkInputs();
+});
+
+function checkInputs() {
+	// trim to remove the whitespaces
+	const usernameValue = username.value.trim();
+	const phoneValue = phonenumber.value.trim();
+	const hospitalValue = hospital.value.trim();
+	const addressValue = address.value.trim();
+	
+	if(usernameValue === '') {
+		setErrorFor(/^[A-Za-z\s]+$/.test(username), 'Username cannot be blank');
+	} else {
+		setSuccessFor(username);
+	}
+	
+	if(phoneValue === '') {
+		setErrorFor(phonenumber, 'Phone number cannot be blank');
+	} else if (!isPhone(phoneValue)) {
+		setErrorFor(phonenumber, 'Not a valid phonenumber');
+	} else {
+		setSuccessFor(phonenumber);
+	}
+	
+	if(hospitalValue === '') {
+		setErrorFor(hospital, 'hospital cannot be blank');
+	} else {
+		setSuccessFor(hospital);
+	}
+	
+	if(addressValue === '') {
+		setErrorFor(address, 'address cannot be blank');
+	} else if(isAddress(addressValue)) {
+		setErrorFor(address, 'Incorrect address');
+	} else{
+		setSuccessFor(address);
+	}
+}
+
+function setErrorFor(input, message) {
+	const formControl = input.parentElement;
+	const small = formControl.querySelector('small');
+	formControl.className = 'form-control error';
+	small.innerText = message;
+}
+
+function setSuccessFor(input) {
+	const formControl = input.parentElement;
+	formControl.className = 'form-control success';
+}
+	
+function isPhone(phonenumber) {
+	return /^\+?([0-9]{2})\)?[-. ]?([0-9]{4})[-. ]?([0-9]{4})$/;(phonenumber);
+}
+function isAddress(address) {
+	return /^[a-zA-Z0-9\s,.'-]{3,}$/ ;(address);
+}
