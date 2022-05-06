@@ -5,7 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PlateauMed</title>
+    <!-- css -->
     <link rel="stylesheet" href="../appointment/styles.css">
+    <!-- font awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+
 </head>
 <body>
     <nav id="nav" class="nav-container">
@@ -17,7 +21,7 @@
         /></a>
     </nav>
     <div class="site">
-        <h3 style="color: #0B0C7D; font-weight: bold;">Discover a world-class Electronic <br/>  Medical Records (EMR) system</h3> 
+        <h2 style="color: #0B0C7D;"><strong>Discover a world-class Electronic <br/>  Medical Records (EMR) system</strong></h2> 
         <h4>Plateaumed can improve your patient records, save your hospital staff <br/> and increase overall patient satisfaction</h4>
         <img src="../img/Group 45 1.png" alt="">
     </div>
@@ -30,40 +34,40 @@
                 <form id="form" class="form">
                     <div class="form-control">
                         <label for="username">Full Name</label>
-                        <input type= "text" placeholder="Esther Howard" id="username" />
+                        <input type= "text" placeholder="Enter your name" id="username" />
                         <i class="fas fa-check-circle"></i>
                         <i class="fas fa-exclamation-circle"></i>
                         <small>Error message</small>
                     </div>
                     <div class="form-control">
                         <label for="phonenumber">Phone number</label>
-                        <input type="phonenumber" placeholder="09012345678" id="phonenumber" />
+                        <input type="phonenumber" placeholder="08012345678" id="phonenumber" />
                         <i class="fas fa-check-circle"></i>
                         <i class="fas fa-exclamation-circle"></i>
                         <small>Error message</small>
                     </div>
                     <div class="form-control">
                         <label for="username">Hospital name</label>
-                        <input type="hospital" placeholder="Birdview Medical Center" id="hospital"/>
+                        <input type="hospital" placeholder="Enter your hospital name" id="hospital"/>
                         <i class="fas fa-check-circle"></i>
                         <i class="fas fa-exclamation-circle"></i>
                         <small>Error message</small>
                     </div>
                     <div class="form-control">
                         <label for="username">Hospital address</label>
-                        <input type="address" placeholder="8502 Preston Rd. Inglewood, Maine 98380" id="address"/>
+                        <input type="address" placeholder="Enter your hospital address" id="address"/>
                         <i class="fas fa-check-circle"></i>
                         <i class="fas fa-exclamation-circle"></i>
                         <small>Error message</small>
                     </div>
                     <div class="form-control">
                         <label for="username">Choose your preferred date and time</label>
-                        <a href=""><input type="" placeholder="Select your preferred date and time" id=""/></a>
+                        <a href=""><input type="" placeholder="Select your preferred date and time " id=""/><i class="fa-thin fa-calendar-days"></i></a>
                         <i class="fas fa-check-circle"></i>
                         <i class="fas fa-exclamation-circle"></i>
                         <small>Error message</small>
                     </div>
-                    <button>Submit</button>
+                    <button onclick="submit()">Submit</button>
                 </form>
             </div>
         </div>
@@ -72,6 +76,10 @@
     
     
     
-    <script src="../appointment/index.js"></script>
+    <script src="../appointment/index.js">
+        function submit(){
+	alert("Approved successfully")
+}
+    </script>
 </body>
 </html>
