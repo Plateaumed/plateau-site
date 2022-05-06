@@ -52,6 +52,7 @@
 }
 * {
 	box-sizing: border-box;
+	/* margin: 0%; */
 }
 
 body,
@@ -68,51 +69,98 @@ nav{
     position: absolute;
     float: right;
     height: 64px;
-    left: 1000px;
-    top: 0px;
+    left: 61rem;
+    top: 30px;
+	border: 50px;
+
 
 }
  .column {
-    float: right;
-    width: 50%;
-    padding-top: 50px;
+	position: absolute;
+	width: 480px;
+	height: 592px;
+	left: 44rem;
+	top: 100px;
+
+	background: #FFFFFF;
+	border-radius: 15px;
  }
   .site{
-    position: absolute;
+	position: absolute;
+	width: 630px;
+	height: 720px;
+	left: 40px;
+	top: 4rem;
    
  
   }
-  h2{
-	  font-weight: bolder;
+ 
+  header{
+
+	font-family: 'General Sans';
+	font-size: 28px;
+	font-weight: 700 bold;
+	line-height: 40px;
+	letter-spacing: 0em;
+
+	
   }
-  /* img{
-   /* top: 169.28px; */
-  /* } */ 
-.container {
+  #site {
+
+	font-family: 'General Sans';
+	font-size: 16px;
+	font-weight: 500;
+	line-height: 24px;
+	letter-spacing: 0.02em;
+	top: 300rem;
+	
+  }
+  #text{
+
+	font-family: 'General Sans';
+	font-size: 16px;
+	font-weight: 500;
+	line-height: 24px;
+	letter-spacing: 0.02em;
+	text-align: center;
+
+	
+  }
+ .image{
+	position: absolute;
+width: 720px;
+height: 451.23px;
+left: -7px;
+top: 3rem;
+
+/* transform: rotate(26.28deg); */
+	
+   } 
+ /* .container {
 	background-color: #fff;
 	border-radius: 15px;
-	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+
 	overflow: hidden;
-	width: 400px;
+	width: 480px;
+height: 592px;
+left: 750px;
+top: 100px;
 	max-width: 100%;
     justify-content: left;
-    /* padding: 10px; */
-}
+    padding: 10px;
+ }  */
 
-.header {
+/* .header {
 	border-bottom: 1px solid #f0f0f0;
 	background-color: #f7f7f7;
 	padding: 20px 40px;
-}
+} */
 
-.header h2 {
-	margin: 0;
-}
 
 .form {
-	padding: 30px 40px;	
+	padding: 0px 40px;	
     /* width: 240%;  height: 20px; */
-}
+} 
 
 .form-control {
 	margin-bottom: 10px;
@@ -122,8 +170,14 @@ nav{
 }
 
 .form-control label {
-	display: inline-block;
-	margin-bottom: 5px;
+
+	font-family: 'General Sans';
+	font-size: 12px;
+	font-weight: 500;
+	line-height: 16px;
+	letter-spacing: 0.04em;
+	text-align: center;
+
 }
 
 .form-control input {
@@ -184,10 +238,11 @@ nav{
 	border-radius: 10px;
 	color: #FFFFFF;
 	display: block;
-	font-family: inherit;
+	font-family: 'General Sans';
 	font-size: 16px;
 	padding: 10px;
 	margin-top: 20px;
+	margin-bottom: 15px;
 	width: 100%;
 }
 @media only screen and (max-width: 1200px){

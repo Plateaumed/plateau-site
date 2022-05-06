@@ -1,85 +1,111 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>PlateauMed</title>
     <!-- css -->
-    <link rel="stylesheet" href="../appointment/styles.css">
+    <link rel="stylesheet" href="../appointment/styles.css" />
     <!-- font awesome -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
-
-</head>
-<body>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
     <nav id="nav" class="nav-container">
-        <a href=""
-            ><img
-                class="plateaumed-logo"
-                src="../img/Plateaumed logo.svg"
-                alt="plateaumed-logo"
-        /></a>
+      <a href=""
+        ><img
+          class="plateaumed-logo"
+          src="../img/Plateaumed logo.svg"
+          alt="plateaumed-logo"
+      /></a>
     </nav>
     <div class="site">
-        <h2 style="color: #0B0C7D;"><strong>Discover a world-class Electronic <br/>  Medical Records (EMR) system</strong></h2> 
-        <h4>Plateaumed can improve your patient records, save your hospital staff <br/> and increase overall patient satisfaction</h4>
-        <img src="../img/Group 45 1.png" alt="">
+      <header style="color: #0b0c7d">
+        <strong
+          >Discover a world-class Electronic <br />
+          Medical Records (EMR) system</strong
+        >
+      </header>
+      <h4 id="site">
+        Plateaumed can improve your patient records, save your hospital staff
+        <br />
+        and increase overall patient satisfaction
+      </h4>
+      <div class="image"> <img src="../img/Group 45 1.png" alt="" /></div>
+     
     </div>
     <div class="row">
-        <div class="column">
-            <div class="container" id="form">
-                <div class="header">
-                    <h4>Request an appointment with PlateauMed</h4>
-                </div>
-                <form id="form" class="form">
-                    <div class="form-control">
-                        <label for="username">Full Name</label>
-                        <input type= "text" placeholder="Enter your name" id="username" />
-                        <i class="fas fa-check-circle"></i>
-                        <i class="fas fa-exclamation-circle"></i>
-                        <small>Error message</small>
-                    </div>
-                    <div class="form-control">
-                        <label for="phonenumber">Phone number</label>
-                        <input type="phonenumber" placeholder="08012345678" id="phonenumber" />
-                        <i class="fas fa-check-circle"></i>
-                        <i class="fas fa-exclamation-circle"></i>
-                        <small>Error message</small>
-                    </div>
-                    <div class="form-control">
-                        <label for="username">Hospital name</label>
-                        <input type="hospital" placeholder="Enter your hospital name" id="hospital"/>
-                        <i class="fas fa-check-circle"></i>
-                        <i class="fas fa-exclamation-circle"></i>
-                        <small>Error message</small>
-                    </div>
-                    <div class="form-control">
-                        <label for="username">Hospital address</label>
-                        <input type="address" placeholder="Enter your hospital address" id="address"/>
-                        <i class="fas fa-check-circle"></i>
-                        <i class="fas fa-exclamation-circle"></i>
-                        <small>Error message</small>
-                    </div>
-                    <div class="form-control">
-                        <label for="username">Choose your preferred date and time</label>
-                        <a href=""><input type="" placeholder="Select your preferred date and time " id=""/><i class="fa-thin fa-calendar-days"></i></a>
-                        <i class="fas fa-check-circle"></i>
-                        <i class="fas fa-exclamation-circle"></i>
-                        <small>Error message</small>
-                    </div>
-                    <button onclick="submit()">Submit</button>
-                </form>
+      <div class="column">
+        <div class="container" id="form">
+          <div class="header">
+            <h4 id="text">Request an appointment with PlateauMed</h4>
+          </div>
+          <form id="form" class="form">
+            <div class="form-control">
+              <label for="username">Full Name</label>
+              <input type="text" placeholder="Enter your name" id="username" />
+              <i class="fas fa-check-circle"></i>
+              <i class="fas fa-exclamation-circle"></i>
+              <small>Error message</small>
             </div>
+            <div class="form-control">
+              <label for="phonenumber">Phone number</label>
+              <input
+                type="phonenumber"
+                placeholder="08012345678"
+                id="phonenumber"
+              />
+              <i class="fas fa-check-circle"></i>
+              <i class="fas fa-exclamation-circle"></i>
+              <small>Error message</small>
+            </div>
+            <div class="form-control">
+              <label for="username">Hospital name</label>
+              <input
+                type="hospital"
+                placeholder="Enter your hospital name"
+                id="hospital"
+              />
+              <i class="fas fa-check-circle"></i>
+              <i class="fas fa-exclamation-circle"></i>
+              <small>Error message</small>
+            </div>
+            <div class="form-control">
+              <label for="username">Hospital address</label>
+              <input
+                type="address"
+                placeholder="Enter your hospital address"
+                id="address"
+              />
+              <i class="fas fa-check-circle"></i>
+              <i class="fas fa-exclamation-circle"></i>
+              <small>Error message</small>
+            </div>
+            <div class="form-control">
+              <label for="username">Choose your preferred date and time</label>
+              <a href=""
+                ><input
+                  type=""
+                  placeholder="Select your preferred date and time "
+                  id="" /><i class="fa-thin fa-calendar-days"></i
+              ></a>
+              <i class="fas fa-check-circle"></i>
+              <i class="fas fa-exclamation-circle"></i>
+              <small>Error message</small>
+            </div>
+            <button onclick="submit()">Submit</button>
+          </form>
         </div>
-        
       </div>
-    
-    
-    
+    </div>
+
     <script src="../appointment/index.js">
-        function submit(){
-	alert("Approved successfully")
-}
+              function submit(){
+      	alert("Approved successfully")
+      }
     </script>
-</body>
+  </body>
 </html>
