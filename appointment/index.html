@@ -8,10 +8,7 @@
     <!-- css -->
     <link rel="stylesheet" href="../appointment/styles.css" />
     <!-- font awesome -->
-    <link
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
-      rel="stylesheet"
-    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   </head>
   <body>
     <nav id="nav" class="nav-container">
@@ -90,21 +87,35 @@
                 ><input
                   type=""
                   placeholder="Select your preferred date and time "
-                  id="date"/></a>
-                  <i class="fa-thin fa-calendar-days"></i
-                    >
+                  id="date"/></a><i class="fa fa-calendar" aria-hidden="true"></i>
+                 
               <!-- <i class="fas fa-check-circle"></i>
               <i class="fas fa-exclamation-circle"></i> -->
               <!-- <small>Error message</sm  all> -->
             </div>
-            <button >Submit</button>
+           
+            <button data-modal-target="#modal">Submit</button>
+            <div class="modal" id="modal">
+              <div class="modal-header">
+                <i class="fa fa-check-circle-o fa-3x" aria-hidden="true" id="check"></i>
+                <div class="title">Appointment booked successfully</div>
+                
+              </div>
+              <div class="modal-body">
+                You have successfully booked an appointment and your <br> request is being processed</div>
+                <button data-close-button class="close-button" id="close">Close &times;</button>
+            </div>
+           
+            <div id="overlay">
+              
+            </div>
           </form>
         </div>
       </div>
     </div>
 
     <script src="../appointment/index.js">
-              f
+              
     </script>
   </body>
 </html>
