@@ -1,58 +1,55 @@
 @font-face {
   font-family: "GeneralSansBold";
-  src: url("../appointment/fonts/OTF/GeneralSans-Bold.otf") format("otf");
+  src: url("../appointment/fonts/OTF/GeneralSans-Bold.otf");
 }
 
 @font-face {
   font-family: "GeneralSansBoldItalic";
-  src: url("../appointment/fonts/OTF/GeneralSans-BoldItalic.otf") format("otf");
+  src: url("../appointment/fonts/OTF/GeneralSans-BoldItalic.otf");
 }
 
 @font-face {
   font-family: "GeneralSansExtralight";
-  src: url("../appointment/fonts/OTF/GeneralSans-Extralight.otf") format("otf");
+  src: url("../appointment/fonts/OTF/GeneralSans-Extralight.otf");
 }
 
 @font-face {
   font-family: "GeneralSansExtraLightItalic";
-  src: url("../appointment/fonts/OTF/GeneralSans-ExtralightItalic.otf")
-    format("otf");
+  src: url("../appointment/fonts/OTF/GeneralSans-ExtralightItalic.otf");
 }
 
 @font-face {
   font-family: "GeneralSansItalic";
-  src: url("../appointment/fonts/OTF/GeneralSans-Italic.otf") format("otf");
+  src: url("../appointment/fonts/OTF/GeneralSans-Italic.otf");
 }
 
 @font-face {
   font-family: "GeneralSansLight";
-  src: url("../appointment/fonts/OTF/GeneralSans-Light.otf") format("otf");
+  src: url("../appointment/fonts/OTF/GeneralSans-Light.otf");
 }
 @font-face {
   font-family: "GeneralSansLightItalic";
-  src: url("../appointment/fonts/OTF/GeneralSans-LightItalic.otf") format("otf");
+  src: url("../appointment/fonts/OTF/GeneralSans-LightItalic.otf");
 }
 @font-face {
   font-family: "GeneralSansMedium";
-  src: url("../appointment/fonts/OTF/GeneralSans-Medium.otf") format("otf");
+  src: url("../appointment/fonts/OTF/GeneralSans-Medium.otf");
 }
 @font-face {
   font-family: "GeneralSansMediumItalic";
-  src: url("../appointment/fonts/OTF/GeneralSans-MediumItalic.otf")
-    format("otf");
+  src: url("../appointment/fonts/OTF/GeneralSans-MediumItalic.otf");
 }
 @font-face {
   font-family: "GeneralSansRegular";
-  src: url("../appointment/fonts/OTF/GeneralSans-Regular.otf") format("otf");
+  src: url("../appointment/fonts/OTF/GeneralSans-Regular.otf");
 }
 @font-face {
   font-family: "GeneralSansSemibold";
-  src: url("../appointment/fonts/OTF/GeneralSans-Semibold.otf") format("otf");
+  src: url("../appointment/fonts/OTF/GeneralSans-Semibold.otf");
 }
 @font-face {
   font-family: "GeneralSansSemiboldItalic";
-  src: url("../appointment/fonts/OTF/GeneralSans-SemiboldItalic.otf")
-    format("otf");
+  src: url("../appointment/fonts/OTF/GeneralSans-SemiboldItalic.otf");
 }
 * {
   box-sizing: border-box;
@@ -66,7 +63,7 @@ html {
   margin: 0;
   box-sizing: border-box;
   background-color: #edf0f8;
-  font-family: "General Sans";
+  font-family: "GeneralSansRegular";
   scroll-behavior: smooth;
 }
 nav {
@@ -78,14 +75,14 @@ nav {
   border: 50px;
 }
 .column {
-  position: absolute;
-  width: 480px;
-  height: 592px;
-  left: 44rem;
-  top: 100px;
-
-  background: #ffffff;
-  border-radius: 15px;
+	position: absolute;
+	width: 480px;
+	height: 592px;
+	left: 750px;
+	top: 100px;
+	
+	background: #FFFFFF;
+	border-radius: 15px;
 }
 .site {
   position: absolute;
@@ -96,27 +93,29 @@ nav {
 }
 
 header {
-  font-family: "General Sans";
+  font-family: "GeneralSansBold";
   font-size: 28px;
-  font-weight: 700 bold;
+  font-weight: 700;
   line-height: 40px;
   letter-spacing: 0em;
 }
 #site {
-  font-family: "General Sans";
+  font-family: "GeneralSansRegular";
   font-size: 16px;
+  font-style: normal;
   font-weight: 500;
   line-height: 24px;
   letter-spacing: 0.02em;
   top: 300rem;
 }
 #text {
-  font-family: "General Sans";
+  font-family: "GeneralSansRegular";
   font-size: 16px;
   font-weight: 500;
   line-height: 24px;
   letter-spacing: 0.02em;
   text-align: center;
+  padding: 20px;
 }
 .image {
   position: absolute;
@@ -135,7 +134,7 @@ header {
 
 .form-control {
   margin-bottom: 10px;
-  padding-bottom: 7px;
+  /* padding-bottom: 7px; */
   position: relative;
   width: 100%;
   padding: 12px, 4px, 12px, 12px;
@@ -147,10 +146,11 @@ header {
   height: 16px;
   left: 0px;
   top: 0px;
+  
 
   /* Labels */
 
-  font-family: "General Sans";
+  font-family: "GeneralSansRegular";
   font-style: normal;
   font-weight: 500;
   font-size: 12px;
@@ -177,6 +177,8 @@ header {
   font-weight: 400;
   padding: 10px;
   width: 100%;
+  line-height: 24px;
+  
 }
 
 .form-control input:focus {
@@ -208,7 +210,7 @@ header {
 
   /* Labels */
 
-  font-family: "General Sans";
+  font-family: "GeneralSansRegular";
   font-style: normal;
   font-weight: 500;
   font-size: 12px;
@@ -220,7 +222,7 @@ header {
 
   /* text/main */
 
-  color: #677597;
+  color: #27ae60;
 
   /* Inside auto layout */
 
@@ -241,7 +243,7 @@ header {
   height: 36px;
   left: 0px;
   top: 0px;
-
+  color: red;
   background: #e2f8eb;
   border-radius: 10px;
   cursor: pointer;
@@ -253,6 +255,30 @@ order: 0;
 flex-grow: 0; */
   margin: 8px 0px;
 }
+.input {
+ 
+  /* alert/green */
+color: #27AE60;
+  background: #CDF4DD;
+  display: flex;
+flex-direction: row;
+align-items: center;
+padding: 6px 4px 6px 12px;
+
+position: static;
+width: 400px;
+height: 36px;
+left: 0px;
+top: 0px;
+border-radius: 10px;
+font-weight: 500;
+font-size: 16px;
+line-height: 24px;
+}
+.link{
+	text-decoration: none;
+
+}
 /* .form-control.success input {
 	border-color: #2ecc71;
 } */
@@ -262,8 +288,8 @@ flex-grow: 0; */
 }
 
 .form-control i {
-  visibility: hidden;
-  position: absolute;
+  /* visibility: hidden; */
+  /* position: absolute; */
   top: 40px;
   right: 10px;
 }
@@ -296,13 +322,13 @@ flex-grow: 0; */
   border-radius: 10px;
   color: #ffffff;
   display: block;
-  font-family: "General Sans";
+  font-family: "GeneralSansRegular";
   font-size: 18px;
   padding: 10px;
-  margin-top: 2.5rem;
+  margin-top: 2rem;
   margin-bottom: 2rem;
   width: 100%;
-  /* top: 528px; */
+  top: 528px;
 }
 .form button:focus {
   display: flex;
@@ -322,7 +348,10 @@ flex-grow: 0; */
   background: #0b0c7d;
   border-radius: 10px;
 }
-
+.calendar{
+ color:  #27AE60;
+ padding-left: 100px;
+}
 @media only screen and (max-width: 1200px) {
   /*Tablets [601px -> 1200px]*/
 }
@@ -347,7 +376,7 @@ flex-grow: 0; */
   box-shadow: 0 -5px 0 0 #27ae60;
   width: 580px;
   height: 360px;
-  
+
   /* max-width: 80%; */
 }
 
@@ -355,7 +384,6 @@ flex-grow: 0; */
   transform: translate(-50%, -50%) scale(1);
   /* background: rgba(11, 12, 125, 0.4);
 backdrop-filter: blur(10px); */
-  
 }
 
 /* .modal-header {
@@ -375,7 +403,7 @@ backdrop-filter: blur(10px); */
 
   /* H5 */
 
-  font-family: "General Sans";
+  font-family: "GeneralSansRegular";
   font-style: normal;
   font-weight: 600;
   font-size: 23.04px;
@@ -387,19 +415,23 @@ backdrop-filter: blur(10px); */
   color: #27ae60;
 }
 
-.close-button {
+#close {
   margin: 0;
   position: absolute;
-  top: 70%;
+  /* top: 70%; */
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
-  /* width: 19px;
-height: 48px; */
+  width: 139px;
+height: 48px;
+left: 221px;
+top: 278px;
+background: #0B0C7D;
+border-radius: 10px;
 
   /* primary/blue */
-
-  background: #0b0c7d;
-  border-radius: 10px;
+  /* width: 500%; */
+  /* background: #0b0c7d; */
+  /* border-radius: 10px; */
 }
 #check {
   position: absolute;
@@ -426,7 +458,7 @@ height: 48px; */
 
   /* Body */
 
-  font-family: "General Sans";
+  font-family: "GeneralSansRegular";
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -438,7 +470,7 @@ height: 48px; */
 
   /* text/black */
 
-  /* color: #051438; */
+  color: #051438;
 }
 
 #overlay {
@@ -452,10 +484,10 @@ height: 48px; */
   /* background: rgba(11, 12, 125, 0.4); */
   pointer-events: none;
   background: rgba(11, 12, 125, 0.4);
-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
 }
 
 #overlay.active {
-	opacity: 1;
-	pointer-events: all;
+  opacity: 1;
+  pointer-events: all;
 }
