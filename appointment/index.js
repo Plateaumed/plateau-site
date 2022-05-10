@@ -1,7 +1,7 @@
 const form = document.getElementById('form');
 const username = document.getElementById('username');
 const phonenumber = document.getElementById('phonenumber');
-const hospital = document.getElementById('hospital');
+const hospital= document.getElementById('hospital');
 const address = document.getElementById('address');
 
 form.addEventListener('submit', e => {
@@ -18,13 +18,13 @@ function checkInputs() {
 	const addressValue = address.value.trim();
 	
 	if(usernameValue === '') {
-		setErrorFor(/^[A-Za-z\s]+$/.test(username), 'Username cannot be blank');
+		setErrorFor(/^[A-Za-z\s]+$/.test(username), 'username cannot be blank');
 	} else {
 		setSuccessFor(username);
 	}
 	
 	if(phoneValue === '') {
-		setErrorFor(phonenumber, 'Phone number cannot be blank');
+		setErrorFor(/^(\+\d{1,2}\s)?\(?\d{3}\)?[\s.-]?\d{3}[\s.-]?\d{4}$/.test(phonenumber), 'Phone number cannot be blank');
 	} else if (!isPhone(phoneValue)) {
 		setErrorFor(phonenumber, 'Not a valid phonenumber');
 	} else {
@@ -38,7 +38,7 @@ function checkInputs() {
 	}
 	
 	if(addressValue === '') {
-		setErrorFor(address, 'address cannot be blank');
+		setErrorFor(/^[a-zA-Z0-9\s,'-]*$/.test (address), 'address cannot be blank');
 	} else if(isAddress(addressValue)) {
 		setErrorFor(address, 'Incorrect address');
 	} else{
@@ -58,12 +58,12 @@ function setSuccessFor(input) {
 	formControl.className = 'form-control success';
 }
 	
-function isPhone(phonenumber) {
-	return /^\+?([0-9]{2})\)?[-. ]?([0-9]{4})[-. ]?([0-9]{4})$/;(phonenumber);
-}
-function isAddress(address) {
-	return /^[a-zA-Z0-9\s,.'-]{3,}$/ ;(address);
-}
+// function isPhone(phonenumber) {
+// 	return /^\+?([0-9]{2})\)?[-. ]?([0-9]{4})[-. ]?([0-9]{4})$/;(phonenumber);
+// }
+// function isAddress(address) {
+// 	return /^[a-zA-Z0-9\s,.'-]{3,}$/ ;(address);
+// }
 
 // button
 const openModalButtons = document.querySelectorAll('[data-modal-target]')
