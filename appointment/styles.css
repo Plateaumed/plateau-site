@@ -306,7 +306,9 @@ header {
 
 /* button */
 .modal {
-  position: fixed;
+  position: absolute;
+width: 580px;
+height: 360px;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) scale(0);
@@ -324,6 +326,8 @@ header {
 
 .modal-header .title {
   position: absolute;
+  width: 377px;
+  height: 32px;
   left: 102px;
   top: 150px;
 
@@ -342,13 +346,26 @@ header {
 }
 
 #close {
-  margin: 0;
-  position: absolute;
+  
+display: flex;
+justify-content: center;
+align-items: center;
+/* margin: 17.375rem 13.8125rem 13.75rem 2.125rem; */
+
+
+position: relative;
+float: initial;
+width: 8.6875rem;
+/* height: 48px; */
+left: 40%;
+
+top: 278px;
+/* margin: 0; */
+
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
-  height: 48px;
-  left: 221px;
-  top: 278px;
+
+ 
   background: #0b0c7d;
   border-radius: 10px;
 }
@@ -372,12 +389,13 @@ header {
 }
 
 .modal-body {
+
   position: absolute;
   width: 445px;
   height: 48px;
   left: 68px;
   top: 198px;
-
+  
   /* Body */
 
   font-family: "GeneralSansRegular";
