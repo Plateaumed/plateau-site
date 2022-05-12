@@ -67,7 +67,6 @@ html {
 }
 .page-container {
   background-color: #edf0f8;
-  max-width: 1280px;
   padding: 2rem 3.125rem 1.75rem 3.125rem;
 }
 .wrapper {
@@ -84,14 +83,12 @@ nav {
   flex-direction: row-reverse;
 }
 .column {
-  width: 480px;
 
   background: #ffffff;
   border-radius: 15px;
 }
 .site {
   position: relative;
-  width: 630px;
 }
 
 header {
@@ -119,7 +116,6 @@ header {
   padding: 20px;
 }
 .image {
-  max-width: 39.375rem;
 
   margin-top: 4rem;
 }
@@ -141,8 +137,6 @@ header {
 
 .form-control label {
   position: static;
-  width: 102px;
-  height: 16px;
   left: 0px;
   top: 0px;
 
@@ -187,7 +181,6 @@ header {
   padding: 12px 4px 12px 12px;
 
   position: static;
-  width: 400px;
   height: 48px;
   left: 0px;
   top: 24px;
@@ -196,8 +189,7 @@ header {
   border-radius: 10px;
 }
 .date {
-  position: static;
-  width: 221px;
+
   height: 16px;
   left: 0px;
   top: 0px;
@@ -233,8 +225,6 @@ header {
   padding: 6px 4px 6px 12px;
 
   position: static;
-  width: 400px;
-  height: 36px;
   left: 0px;
   top: 0px;
   color: red;
@@ -325,8 +315,7 @@ header {
   z-index: 10;
   background-color: white;
   box-shadow: 0 -5px 0 0 #27ae60;
-  width: 580px;
-  height: 360px;
+
 }
 
 .modal.active {
@@ -335,8 +324,6 @@ header {
 
 .modal-header .title {
   position: absolute;
-  width: 377px;
-  height: 32px;
   left: 102px;
   top: 150px;
 
@@ -359,7 +346,6 @@ header {
   position: absolute;
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
-  width: 139px;
   height: 48px;
   left: 221px;
   top: 278px;
@@ -375,6 +361,14 @@ header {
   color: #27ae60;
 
   background: #ffffff;
+}
+
+.row{
+  width: 40%;
+}
+
+.site{
+  width: 48%;
 }
 
 .modal-body {
@@ -415,18 +409,55 @@ header {
   opacity: 1;
   pointer-events: all;
 }
+
 /* media queries*/
 @media only screen and (max-width: 1200px) {
 .image {
     display: none;
   }
+  nav{
+    display: block;
+  }
+  .row{
+    width: 100%;
+  }
+  .page-container{
+    padding: 2rem 15px 1.75rem 15px;
+  }
+  .form{
+    padding: 0px 20px;
+  }
 }
 @media only screen and (max-width: 600px) {
   /*Big smartphones [426px -> 600px]*/
-  
+  nav{
+    display: block;
+  }
+  .row{
+    width: 100%;
+  }
+  .page-container{
+    padding: 2rem 15px 1.75rem 15px;
+
+  }
+  .form{
+    padding: 0px 20px;
+  }
 }
 @media only screen and (max-width: 425px) {
   .wrapper {
     display: block;
+  }
+  nav{
+    display: block;
+  }
+  .row{
+    width: 100%;
+  }
+  .page-container{
+    padding: 2rem 15px 1.75rem 15px;
+  }
+  .form{
+    padding: 0px 20px;
   }
 }

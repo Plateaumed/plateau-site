@@ -10,7 +10,6 @@ let usernameValue, phoneValue, hospitalValue, addressValue;
 
 form.addEventListener('submit', e => {
 	e.preventDefault();
-	alert("Select your preferred date and time ");
 
 	if(!checkInputs()){
 		let usernameValue = usernameElement.value
