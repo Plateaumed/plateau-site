@@ -33,7 +33,7 @@ sendBtn.addEventListener('click', async () => {
     } else if(!email.match(mailformat)){
         notifyText.innerHTML = "please input a valid email address";
         notifyText.style.color = "red";
-    }
+    } 
     else{
             const response = await fetch(`${url}${email}`);
     

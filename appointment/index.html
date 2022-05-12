@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+    <title>PlateauMed</title>
+    <!-- css -->
+    <link rel="stylesheet" href="../appointment/styles.css" />
+    <!-- font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+  <div id="overlay"></div>
+
+  <div id="calendly-popup" class="modal-container" hidden>
+   </div>
+  <div class="modal modal-container" id="modal" hidden>
+    <div class="modal-header">
+      <img src="../img/check.png" alt="check mark"/>
+      <div class="title">Appointment booked successfully</div>
+    </div>
+    <div class="modal-body">
+     <p> You have successfully booked an appointment and your
+      request is being processed</p>
+    </div>
+    <div class="modal-footer">
+      <button id="close-modal">
+        Close &times;
+      </button>
+    </div>
+
+  </div>
+
+  <div class="page-container">
+      <nav id="nav" class="nav-container">
+        <a href=""
+          ><img
+            class="plateaumed-logo"
+            src="../img/Plateaumed logo.svg"
+            alt="plateaumed-logo"
+        /></a>
+      </nav>
+      <div class="wrapper">
+        <div class="site">
+          <header style="color: #0b0c7d">
+            Discover a world-class Electronic <br />
+            Medical Records (EMR) system
+          </header>
+          <h4 id="site">
+            Plateaumed can improve your patient records, save your hospital
+            staff
+            and increase overall patient satisfaction
+          </h4>
+          <div class="image">
+            <img src="../img/tabled.png" alt="" class="img" />
+          </div>
+        </div>
+        <div class="row">
+          <div class="column">
+            <div class="container" id="form">
+              <div class="header">
+                <h4 id="text">Request an appointment with PlateauMed</h4>
+              </div>
+              <form id="real-form" class="form">
+                <div class="form-control">
+                  <label for="username">Full Name</label>
+                  <input
+                    type="text"
+                    placeholder="Enter your name"
+                    id="username"
+                    required
+                  />
+
+                  <small>Error message</small>
+                </div>
+                <div class="form-control">
+                  <label for="phonenumber">Phone number</label>
+                  <input
+                    type="phonenumber"
+                    placeholder="08012345678"
+                    id="phone"
+                    required
+                  />
+
+                  <small>Error message</small>
+                </div>
+                <div class="form-control">
+                  <label for="email">Email</label>
+                  <input
+                          type="email"
+                          placeholder="Enter your email"
+                          id="email"
+                          required
+                  />
+
+                  <small>Error message</small>
+                </div>
+                <div class="form-control">
+                  <label for="hospital">Hospital name</label>
+                  <input
+                    type="hospital"
+                    placeholder="Enter your hospital name"
+                    id="hospital"
+                    required
+                  />
+
+                  <small>Error message</small>
+                </div>
+                <div class="form-control">
+                  <label for="address">Hospital address</label>
+                  <input
+                    type="address"
+                    placeholder="Enter your hospital address"
+                    id="address"
+                    required
+                  />
+
+                  <small>Error message</small>
+                </div>
+                <div class="form-control submit-button">
+                  <button type="submit">Submit</button>
+                </div>
+
+              </form>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="../appointment/index.js"></script>
+    <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js"></script>
+  </body>
+</html>
