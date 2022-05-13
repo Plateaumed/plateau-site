@@ -486,6 +486,14 @@ header {
     width: 100%;
   }
 
+  #calendly-popup{
+    left: 5%;
+    right: 5%;
+    top: 10%;
+    bottom: 5%;
+    z-index: 1;
+  }
+
 }
 @media only screen and (max-width: 600px) {
   /*Big smartphones [426px -> 600px]*/
